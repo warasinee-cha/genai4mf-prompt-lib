@@ -1,0 +1,20 @@
+site_name: Gen AI for Modern Workforce - Prompt Lib
+site_url: https://warasinee-cha.github.io/genai4mf-prompt-lib/
+
+theme:
+  name: material
+  palette:
+    primary: amber
+  features:
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - Fun Prompts: fun-prompts.md
+
+extra_css:
+  - stylesheets/extra.css
