@@ -15,6 +15,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Fun Prompts: fun-prompts.md
+  - Download Slides: slide.md
+  - Prompt Engineering: prompt-engineering.md
+  - Generative AI: generative-ai-basics.md
+  - NotebookLM : notebooklm.md
+  - Gamma.app: gamma-app.md
+  - Suno: suno-video.md
+  - Luma AI: luma-ai-video.md
+  - Additional Tool: additional-tool.md
 
 extra_css:
   - stylesheets/extra.css
