@@ -1,0 +1,805 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-creativity-boost/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>สื่อสารภาษาอังกฤษอย่างมืออาชีพด้วย AI - Gen AI for Modern Workforce - Prompt Lib</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-header__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gen AI for Modern Workforce - Prompt Lib
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              สื่อสารภาษาอังกฤษอย่างมืออาชีพด้วย AI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-nav__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Gen AI for Modern Workforce - Prompt Lib
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fun-prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fun Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download Slides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompt-engineering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompt Engineering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompt Engineering - Personalized Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-english-communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompt Engineering - English Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generative-ai-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooklm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NotebookLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamma-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamma.app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../suno-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../luma-ai-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luma AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../additional-tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 สถานการณ์สมมติ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 อ่านอีเมลจากลูกค้าให้เข้าใจ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ปรึกษา AI ว่าตอบอย่างไรดี
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 เมื่อต้องพูดภาษาอังกฤษ ใช้เอไอช่วยเตรียมตัว
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 เมื่อต้องพูดภาษาอังกฤษ ใช้เอไอช่วยเตรียมตัว">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-can-you-tell-us-about-your-experience-in-mobile-app-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Can you tell us about your experience in mobile app development?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-what-cloud-technologies-have-you-worked-with-and-how-have-you-applied-them-in-your-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What cloud technologies have you worked with, and how have you applied them in your projects?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-can-you-describe-a-challenging-project-you-worked-on-and-how-you-overcame-the-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Can you describe a challenging project you worked on and how you overcame the challenges?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-why-are-you-interested-in-our-ai-projects-at-tech-innovators" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Why are you interested in our AI projects at Tech Innovators?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-how-do-you-handle-working-in-a-team-and-how-do-you-communicate-effectively-with-other-team-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. How do you handle working in a team, and how do you communicate effectively with other team members?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-where-do-you-see-yourself-in-the-next-five-years-and-how-do-you-plan-to-develop-your-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Where do you see yourself in the next five years, and how do you plan to develop your skills?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-can-you-walk-us-through-your-approach-to-managing-technical-debt-in-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Can you walk us through your approach to managing technical debt in a project?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions-you-should-ask-the-company" class="md-nav__link">
+    <span class="md-ellipsis">
+      Questions You Should Ask the Company:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#techniques-for-confident-english-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Techniques for Confident English Communication:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-prompt-engineering-101" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 สรุปวิธีการเขียน prompt ที่ดี (Prompt Engineering 101)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ai">สื่อสารภาษาอังกฤษอย่างมืออาชีพด้วย AI</h1>
+<h2 id="_1">👩🏻‍💼 สถานการณ์สมมติ</h2>
+<p>คุณเป็นเจ้าของโรงแรมระดับ 5 ดาวในภูเก็ต พนักงานต้อนรับของคุณต้องตอบอีเมลจากลูกค้าชาวอเมริกันที่สนใจจะมาพักที่โรงแรมของคุณในช่วงวันหยุดยาว พนักงานจะใช้ ChatGPT ช่วยร่างอีเมลตอบกลับที่ครอบคลุม สุภาพ และเป็นมืออาชีพได้อย่างไร</p>
+<h2 id="_2">🚀 อ่านอีเมลจากลูกค้าให้เข้าใจ</h2>
+<p>สมมติว่ามีนักท่องเที่ยวชาวอเมริกัน ติดต่อมาซักถามเรื่องบริการของโรงแรม ก่อนอื่นเราอาจจะสอนให้พนักงานวิเคราะห์อีเมลของลูกค้าก่อนว่าเขาต้องการทราบอะไร จะได้ตอบได้ครบถ้วน</p>
+<pre><code class="language-prompt">ช่วยวิเคราะห์อีเมลนี้และระบุประเด็นสำคัญที่ลูกค้าต้องการทราบเป็นข้อๆ ตอบเป็นภาษาไทย
+
+---
+
+Hello,
+
+I hope this message finds you well. My name is Sarah, and I'm planning a family trip to Phuket in December. We're looking to stay at a 5-star hotel that offers both luxury and convenience for our family of four.
+
+I came across your hotel, and it looks absolutely stunning! We’re considering a stay of at least 10 days, and I wanted to inquire about any special promotions or discounts you might offer for longer stays. Additionally, we’re interested in exploring the area and would love to know more about the package tours or activities your hotel can arrange for families, especially ones that offer cultural experiences and are suitable for young children.
+
+Lastly, could you also provide information about any dining options you have on-site, particularly if you offer any special dietary accommodations? We have a mix of dietary preferences in our family, so it would be great to know what’s available.
+
+Thank you so much for your assistance. We’re very much looking forward to our trip.
+
+Best regards,
+Sarah
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างคำตอบ</summary>
+<p>จากการวิเคราะห์อีเมลนี้ ประเด็นสำคัญที่ลูกค้าต้องการทราบมีดังนี้:</p>
+<ol>
+<li>โปรโมชั่นหรือส่วนลดสำหรับการเข้าพักระยะยาว (อย่างน้อย 10 วัน) ในโรงแรมระดับ 5 ดาว</li>
+<li>แพ็คเกจทัวร์หรือกิจกรรมที่โรงแรมสามารถจัดให้สำหรับครอบครัว โดยเฉพาะกิจกรรมที่:<ul>
+<li>ให้ประสบการณ์ทางวัฒนธรรม</li>
+<li>เหมาะสำหรับเด็กเล็ก</li>
+</ul>
+</li>
+<li>ข้อมูลเกี่ยวกับตัวเลือกร้านอาหารภายในโรงแรม โดยเฉพาะ:<ul>
+<li>ความสามารถในการรองรับความต้องการด้านอาหารพิเศษ</li>
+<li>ตัวเลือกอาหารที่หลากหลายสำหรับครอบครัวที่มีความชอบด้านอาหารที่แตกต่างกัน</li>
+</ul>
+</li>
+<li>รายละเอียดเกี่ยวกับสิ่งอำนวยความสะดวกและบริการที่เหมาะสำหรับครอบครัว 4 คน</li>
+<li>ข้อมูลทั่วไปเกี่ยวกับการท่องเที่ยวในพื้นที่ภูเก็ตและบริเวณใกล้เคียง</li>
+</ol>
+</details>
+<h2 id="ai_1">🚀 ปรึกษา AI ว่าตอบอย่างไรดี</h2>
+<p>ถึงแม้จะเข้าใจแล้วว่าลูกค้าต้องการอะไร พนักงานต้อนรับก็อาจจะยังตอบไม่ได้ อาจจะเพราะเขาไม่ทราบคำตอบ หรืออาจจะทราบ แต่ไม่รู้จะอธิบายอย่างไร ไม่เป็นไร เอไอช่วยได้</p>
+<pre><code class="language-prompt">ในประเด็นของ &quot;โปรโมชั่นหรือส่วนลดสำหรับการเข้าพักระยะยาว (อย่างน้อย 10 วัน)&quot; ฉันไปถามพี่ผู้จัดการแล้ว เขาบอกว่า มีส่วนลด 10% สำหรับห้อง Deluxe Suite ซึ่งฉันคิดว่าน่าจะเหมาะกับลูกค้า เพราะมีพื้นที่เพิ่มเตียงเสริมให้ลูกๆของเขารวม 2 เตียง มีพื้นที่ครัวเล็กๆ และอ่างอาบน้ำขนาดใหญ่ น่าจะทำให้การพักของลูกค้าสะดวกสบายมากขึ้น
+
+ช่วยเขียนตอบลูกค้าเฉพาะประเด็นนี้ก่อน (เขียน 1 ย่อหน้า ยังไม่ต้องใส่ข้อความหัวท้ายของอีเมล) เขียนเป็นภาษาอังกฤษที่แกรมม่าดีเลิศ อย่างกับเขียนโดยพนักงานโรงแรมห้าดาวที่ใช้ภาษาอังกฤษเก่งเหมือนเกิดเมืองนอก
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างคำตอบ</summary>
+<p>We are delighted to inform you that we offer a special 10% discount on our Deluxe Suite for extended stays of 10 days or more. This spacious accommodation is ideal for families, featuring ample room for two additional beds for your children, a cozy kitchenette, and a luxurious oversized bathtub. The Deluxe Suite provides the perfect blend of comfort and convenience, ensuring a memorable and relaxing stay for you and your family. We believe this option will not only meet but exceed your expectations, offering a home-away-from-home experience with all the amenities and services you'd expect from our five-star establishment.</p>
+</details>
+<p>สำหรับเรื่องที่พนักงานไม่รู้หรือไม่มีข้อมูล เขาสามารถเสิชหาคำตอบได้ (อาจจะเปิด conversation ใหม่เพื่อมาเสิชหาข้อมูล)</p>
+<pre><code class="language-prompt">ช่วยหาสถานที่ท่องเที่ยวที่เป็นที่นิยมในจังหวัดภูเก็ตที่เหมาะสำหรับเด็กเล็ก ให้ประสบการณ์ด้านวัฒนธรรมท้องถิ่นของไทยให้สัก 2-3 ที่ เสิชอินเตอร์เน็ตมาตอบและขอลิงค์ด้วยนะ
+</code></pre>
+<p><img alt="Alt text" src="../images/image-01.png" /></p>
+<pre><code class="language-prompt">สำหรับประเด็น &quot;แพ็คเกจทัวร์หรือกิจกรรมที่โรงแรมสามารถจัดให้สำหรับครอบครัว&quot; และ &quot;การท่องเที่ยวในพื้นที่ภูเก็ต&quot; อยากจะตอบแบบนี้
+
+- ทางโรงแรมไม่มีการจัดทัวร์ให้ แต่เรายินดีแนะนำที่ท่องเที่ยวที่เหมาะกับเด็กเล็กได้ เช่น 
+    - Phuket Trickeye Museum: พิพิธภัณฑ์นี้เป็นพิพิธภัณฑ์ศิลปะ 3 มิติแห่งแรกในภาคใต้ของประเทศไทย ที่นี่เด็ก ๆ จะได้สนุกกับการสัมผัสและถ่ายรูปกับภาพวาด 3 มิติที่เหมือนจริง 
+    - วัดฉลอง (Wat Chalong): วัดฉลองเป็นวัดที่ใหญ่ที่สุดและมีชื่อเสียงที่สุดในภูเก็ต ที่นี่เด็ก ๆ สามารถเรียนรู้เกี่ยวกับพุทธศาสนาและวัฒนธรรมไทยผ่านการเยี่ยมชมพระอุโบสถที่ตกแต่งด้วยภาพวาดเล่าเรื่องชีวิตของพระพุทธเจ้าและชมพระบรมสารีริกธาตุที่เก็บอยู่ในสถูปสูง 60 เมตร นอกจากนี้ยังมีพื้นที่เปิดให้เดินชมรอบ ๆ วัดได้อย่างปลอดภัย 
+    - ย่านเมืองเก่าภูเก็ต (Phuket Old Town): ย่านเมืองเก่าภูเก็ตเป็นพื้นที่ที่เต็มไปด้วยสถาปัตยกรรมแบบชิโน-โปรตุกีส ที่น่าสนใจและมีชีวิตชีวา เด็ก ๆ จะได้เรียนรู้ประวัติศาสตร์และวัฒนธรรมของภูเก็ตผ่านการเดินชมตึกแถวโบราณ
+
+ช่วยเขียนตอบลูกค้าเฉพาะประเด็นนี้ (เขียนให้กระชับ อ่านง่าย และน่าสนใจ ยังไม่ต้องใส่ข้อความหัวท้ายของอีเมล) เขียนเป็นภาษาอังกฤษที่แกรมม่าดีเลิศ อย่างกับเขียนโดยพนักงานโรงแรมห้าดาวที่ใช้ภาษาอังกฤษเก่งเหมือนเกิดเมืองนอก
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างคำตอบ</summary>
+<p>While we don't organize package tours directly, we'd be delighted to recommend some family-friendly attractions that offer both cultural experiences and entertainment for young children. Here are a few highlights:</p>
+<ol>
+<li>Phuket Trickeye Museum: As the first 3D art museum in Southern Thailand, it offers an interactive and fun experience for children, allowing them to touch and take photos with lifelike 3D paintings.</li>
+<li>Wat Chalong: Phuket's largest and most famous temple provides an excellent opportunity for children to learn about Thai Buddhism and culture. They can explore the beautifully decorated ubosot (ordination hall) with its paintings depicting Buddha's life, and view the sacred relics housed in the 60-meter-tall stupa. The temple grounds are safe and spacious for families to explore.</li>
+<li>Phuket Old Town: This charming area, rich in Sino-Portuguese architecture, offers a vibrant and educational experience. Children can discover Phuket's history and culture while strolling through streets lined with colorful, historic shophouses.</li>
+</ol>
+</details>
+<p>Our concierge team would be more than happy to assist you with detailed information, directions, and even arrange transportation to these attractions, ensuring a memorable and culturally enriching experience for your family.</p>
+<h2 id="_3">🚀 เมื่อต้องพูดภาษาอังกฤษ ใช้เอไอช่วยเตรียมตัว</h2>
+<pre><code class="language-prompt">ฉันกำลังจะไปสัมภาษณ์งานตำแหน่ง Senior Software Developer ที่บริษัท Tech Innovators ซึ่งเป็นบริษัทซอฟต์แวร์ชั้นนำในกรุงเทพฯ ช่วยเตรียมคำตอบสำหรับคำถามสัมภาษณ์ที่อาจเจอ และให้คำแนะนำในการตอบคำถามเป็นภาษาอังกฤษอย่างมั่นใจ โดยคำนึงถึงประเด็นต่อไปนี้:
+
+1. ประสบการณ์ 5 ปีของฉันในการพัฒนาแอปพลิเคชันมือถือทั้ง iOS และ Android
+2. ความเชี่ยวชาญใน cloud technologies โดยเฉพาะ AWS และ Google Cloud
+3. ผลงานสำคัญ เช่น การพัฒนาแอพที่มีผู้ใช้มากกว่า 1 ล้านคน
+4. ความสนใจในโครงการ AI ของบริษัท Tech Innovators
+5. ทักษะการทำงานเป็นทีมและการสื่อสาร
+6. การจัดการกับความท้าทายในโปรเจ็กต์ที่ผ่านมา
+7. วิสัยทัศน์ในการพัฒนาตนเองและเป้าหมายในอาชีพ
+
+กรุณาให้ตัวอย่างคำถามที่อาจเจอในการสัมภาษณ์ พร้อมแนวทางการตอบที่ดี รวมถึงเทคนิคการใช้ภาษาอังกฤษในการสัมภาษณ์ให้ฟังดูเป็นมืออาชีพและน่าประทับใจ นอกจากนี้ ช่วยแนะนำคำถามที่ฉันควรถามบริษัทเกี่ยวกับตำแหน่งงานและวัฒนธรรมองค์กรด้วย&quot;
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างคำตอบ</summary>
+<p>Here are some potential interview questions you might encounter for the Senior Software Developer role at Tech Innovators, along with example answers and tips for responding confidently in English:</p>
+<h3 id="1-can-you-tell-us-about-your-experience-in-mobile-app-development">1. Can you tell us about your experience in mobile app development?</h3>
+<p>Sample Answer: "I have over five years of experience developing mobile applications for both iOS and Android platforms. I’ve worked on various projects that required cross-platform development using technologies like Flutter and native SDKs. One of my most significant achievements was leading a team to develop an app that gained over 1 million users, where I managed both frontend and backend development, ensuring smooth user experience and scalability."</p>
+<p>Tips: Highlight specific projects and results to demonstrate your impact. Be confident in mentioning numbers and successes.</p>
+<h3 id="2-what-cloud-technologies-have-you-worked-with-and-how-have-you-applied-them-in-your-projects">2. What cloud technologies have you worked with, and how have you applied them in your projects?</h3>
+<p>Sample Answer: "I specialize in cloud technologies, particularly AWS and Google Cloud. I’ve implemented auto-scaling features, designed cost-efficient architectures, and worked extensively with services like Lambda, EC2, and Firebase. For instance, in my last project, I migrated our backend infrastructure to AWS, reducing downtime and improving system reliability by 30%."</p>
+<p>Tips: Emphasize your technical knowledge of specific cloud platforms and how you’ve used them to solve problems.</p>
+<h3 id="3-can-you-describe-a-challenging-project-you-worked-on-and-how-you-overcame-the-challenges">3. Can you describe a challenging project you worked on and how you overcame the challenges?</h3>
+<p>Sample Answer: "In one project, we faced an unexpected issue with scalability after our user base grew rapidly. To address this, I worked closely with the team to refactor key parts of the codebase and optimize database queries. We also shifted some of the server-side load to AWS Lambda, which improved performance significantly and allowed the app to handle increased traffic without downtime."</p>
+<p>Tips: Focus on your problem-solving process and teamwork in overcoming challenges.</p>
+<h3 id="4-why-are-you-interested-in-our-ai-projects-at-tech-innovators">4. Why are you interested in our AI projects at Tech Innovators?</h3>
+<p>Sample Answer: "I’m very excited about the AI work being done at Tech Innovators, especially the way you're integrating AI to improve user experiences in software solutions. I’ve always been interested in AI, and I’ve even contributed to a few AI-powered features in mobile apps, such as integrating machine learning models for personalized recommendations. I believe my skills in cloud and mobile development, combined with my interest in AI, would allow me to contribute meaningfully to your team."</p>
+<p>Tips: Show enthusiasm and align your personal interests with the company's projects.</p>
+<h3 id="5-how-do-you-handle-working-in-a-team-and-how-do-you-communicate-effectively-with-other-team-members">5. How do you handle working in a team, and how do you communicate effectively with other team members?</h3>
+<p>Sample Answer: "I believe clear communication and collaboration are key to a successful project. I make it a priority to understand the strengths of each team member and foster an environment where everyone feels comfortable sharing their ideas. I also ensure regular check-ins and use tools like Slack and Jira to keep everyone aligned. In one project, this approach helped us meet tight deadlines while maintaining high quality."</p>
+<p>Tips: Showcase your teamwork and communication skills, mentioning specific tools or strategies.</p>
+<h3 id="6-where-do-you-see-yourself-in-the-next-five-years-and-how-do-you-plan-to-develop-your-skills">6. Where do you see yourself in the next five years, and how do you plan to develop your skills?</h3>
+<p>Sample Answer: "In the next five years, I aim to continue growing both technically and as a leader. I’m particularly interested in deepening my knowledge of AI and cloud technologies, as well as taking on more responsibilities in leading cross-functional teams. I also want to stay updated with the latest advancements in software development, so I regularly participate in online courses and attend industry conferences."</p>
+<p>Tips: Show ambition and a commitment to continuous learning.</p>
+<h3 id="7-can-you-walk-us-through-your-approach-to-managing-technical-debt-in-a-project">7. Can you walk us through your approach to managing technical debt in a project?</h3>
+<p>Sample Answer: "Managing technical debt is crucial for long-term project success. I believe in addressing it incrementally by allocating time during each sprint to refactor and optimize code. This helps ensure we’re not sacrificing long-term maintainability for short-term gains. In one of my projects, we reduced technical debt by 40% within six months by following this approach."</p>
+<p>Tips: Emphasize the balance between delivering features and maintaining clean, sustainable code.</p>
+<h3 id="questions-you-should-ask-the-company">Questions You Should Ask the Company:</h3>
+<ol>
+<li>How does Tech Innovators foster collaboration between teams, especially for cross-functional projects?</li>
+<li>This shows your interest in teamwork and how departments collaborate.</li>
+<li>What is the company’s vision for integrating AI technologies into its software products over the next few years?</li>
+<li>Demonstrates your interest in their AI initiatives and long-term commitment.</li>
+<li>What are the biggest challenges your development team is currently facing?</li>
+<li>Asking about challenges shows that you’re thinking about how you can add value right away.</li>
+<li>How does the company support developers in pursuing continuous learning and skill development?</li>
+<li>Highlights your focus on professional growth and learning.</li>
+<li>Can you tell me more about the company culture and how the development team interacts with other departments like design or product management?</li>
+<li>Shows interest in understanding the workplace dynamics and culture.</li>
+</ol>
+<h3 id="techniques-for-confident-english-communication">Techniques for Confident English Communication:</h3>
+<ol>
+<li>Practice active listening – Listen carefully to the questions and pause briefly before answering. This helps you avoid rushing your answers.</li>
+<li>Use structured answers – Follow a clear structure such as the STAR method (Situation, Task, Action, Result) when describing past experiences.</li>
+<li>Maintain eye contact and speak clearly – It helps to exude confidence and professionalism.</li>
+<li>Avoid filler words – Instead of saying "uhm" or "you know," pause briefly to gather your thoughts.</li>
+<li>Tailor your answers – Relate your experiences to how they align with the company's needs. Always end your answers by connecting back to how you can contribute to Tech Innovators.</li>
+</ol>
+<p>By preparing in this structured way, you’ll be able to showcase your expertise, professionalism, and interest in the company. Good luck with your interview!</p>
+</details>
+<h2 id="prompt-prompt-engineering-101">🚀 สรุปวิธีการเขียน prompt ที่ดี (Prompt Engineering 101)</h2>
+<p>การเป็นเจ้านายที่ดีให้กับเอไอ</p>
+<ol>
+<li>เป็นเจ้านายที่รู้ว่าตัวเองต้องการอะไร และต้องถามให้ตรงและชัดเจน </li>
+<li>เราต้องเข้าใจกระบวนการทำงานที่ถูกต้องก่อน แล้วสั่งเอไอตามกระบวนการ เช่น ขั้นตอนที่ 1 ของการตอบอีเมลคือต้องอ่านอีเมลให้เข้าใจก่อน แล้วจึงจะหาคำตอบทีละประเด็น ถ้าสั่งให้ AI ตอบไปเลย เขาอาจจะตอบไม่ถูกใจ</li>
+<li>เอไอไม่ได้มีข้อมูลทั้งหมดของเราอยู่ในหัว เราต้องบอกเขา เช่น ต้องบอกเขาก่อนว่าเรามีข้อดีอะไรบ้าง ก่อนจะให้เขาช่วยเรื่องการสัมภาษณ์งาน</li>
+<li>จะสั่งให้เอไอทำอะไร สุดท้ายคนที่สั่งจะต้องเป็นคนรับผิดชอบผลของงานที่เอไอตอบมา ถ้าตอบผิดพลาด หรือลูกค้าโกรธ คนที่เสียหายคือพนักงานและเจ้าของธุรกิจ ก่อนจะใช้สิ่งที่เอไอบอกมาส่งให้ลูกค้า พนักงานควรอ่านอย่างละเอียดก่อนเสมอ</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../javascripts/exclude-toc.js"></script>
+      
+    
+  </body>
+</html>

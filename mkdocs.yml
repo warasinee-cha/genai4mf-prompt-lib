@@ -11,13 +11,17 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - toc:
+      permalink: true
+      toc_depth: 2
 
 nav:
   - Home: index.md
-  - Fun Prompts: fun-prompts.md
   - Download Slides: slide.md
-  - Prompt Engineering: prompt-engineering.md
+  - Fun Prompts: fun-prompts.md
   - Prompt Engineering - Personalized Learning: pe-personalized-learning.md
+  - Prompt Engineering - English Communication: pe-english-communication.md
+  - Prompt Engineering - Creativity Boost: pe-creativity-boost.md
   - Generative AI: generative-ai-basics.md
   - NotebookLM : notebooklm.md
   - Gamma.app: gamma-app.md
@@ -27,3 +31,4 @@ nav:
 
 extra_css:
   - stylesheets/extra.css
+
