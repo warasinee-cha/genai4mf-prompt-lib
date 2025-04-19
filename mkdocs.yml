@@ -19,15 +19,20 @@ nav:
   - Home: index.md
   - Download Slides: slide.md
   - Fun Prompts: fun-prompts.md
-  - Prompt Engineering - Personalized Learning: pe-personalized-learning.md
-  - Prompt Engineering - English Communication: pe-english-communication.md
-  - Prompt Engineering - Creativity Boost: pe-creativity-boost.md
-  - Generative AI: generative-ai-basics.md
-  - NotebookLM : notebooklm.md
-  - Gamma.app: gamma-app.md
-  - Suno: suno-video.md
-  - Luma AI: luma-ai-video.md
-  - Additional Tool: additional-tool.md
+  - Prompt Engineering:
+    - Personalized Learning: pe-personalized-learning.md
+    - English Communication: pe-english-communication.md
+    - Creativity Boost: pe-creativity-boost.md
+    - Writing Task: pe-writing-doc.md
+    - Data Analytics: pe-data-analytics.md
+  - Resources:
+    - Generative AI: generative-ai-basics.md
+    - NotebookLM : notebooklm.md
+    - Canva AI Features: canva-ai.md
+    - Gamma.app: gamma-app.md
+    - Suno: suno-video.md
+    - Luma AI: luma-ai-video.md
+    - More Tools: additional-tool.md
 
 extra_css:
   - stylesheets/extra.css

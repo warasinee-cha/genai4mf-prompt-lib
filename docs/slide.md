@@ -1,5 +1,5 @@
 # Download เอกสารประกอบการเรียน
 
-ผู้เรียนสามารถดาวน์โหลดเอกสารได้จากลิงค์ข้างล่าง
+**เนื้อหาหลัก**: Generative AI for Modern Workforce
 
-[https://drive.google.com/file/d/11s4AoHSJvakfyXoJV6PrsrGKBHNUml6d/view?usp=sharing](https://drive.google.com/file/d/11s4AoHSJvakfyXoJV6PrsrGKBHNUml6d/view?usp=sharing)
+[https://drive.google.com/file/d/15A7WgbFbI4ZsCHxTPZC58Y6sjdOlNDjq/view?usp=sharing](https://drive.google.com/file/d/15A7WgbFbI4ZsCHxTPZC58Y6sjdOlNDjq/view?usp=sharing)
