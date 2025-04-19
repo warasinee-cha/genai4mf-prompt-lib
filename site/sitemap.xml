@@ -2,54 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/additional-tool/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/canva-ai/</loc>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/fun-prompts/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/gamma-app/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/generative-ai-basics/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/luma-ai-video/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/notebooklm/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-creativity-boost/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-data-analytics/</loc>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-english-communication/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-personalized-learning/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
+    </url>
+    <url>
+         <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-writing-doc/</loc>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/prompt-engineering/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/slide/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/suno-video/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-19</lastmod>
     </url>
 </urlset>
