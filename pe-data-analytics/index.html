@@ -1,0 +1,1357 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-data-analytics/">
+      
+      
+        <link rel="prev" href="../pe-writing-doc/">
+      
+      
+        <link rel="next" href="../generative-ai-basics/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Data Analytics - Gen AI for Modern Workforce - Prompt Lib</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-header__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gen AI for Modern Workforce - Prompt Lib
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Analytics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-nav__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Gen AI for Modern Workforce - Prompt Lib
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download Slides
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fun-prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fun Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Prompt Engineering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Prompt Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personalized Learning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-english-communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    English Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-creativity-boost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creativity Boost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-writing-doc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data Analytics
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Data Analytics
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 สถานการณ์สมมติ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-chatgpt-to-plan-your-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using ChatGPT to Plan Your Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-designs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Designs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-understanding-with-chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Understanding with ChatGPT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cautions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cautions:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generative-ai-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notebooklm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NotebookLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../canva-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canva AI Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamma-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamma.app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../suno-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../luma-ai-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luma AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../additional-tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 สถานการณ์สมมติ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-chatgpt-to-plan-your-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using ChatGPT to Plan Your Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboard-designs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard Designs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-understanding-with-chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Understanding with ChatGPT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cautions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cautions:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ai">วิเคราะห์ข้อมูลด้วย AI<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
+<p>แบบฝึกหัดนี้จะสาธิตความสามารถและข้อจำกัดในการทำ Data Analytics ใน ChatGPT</p>
+<h2 id="_1">👩🏻‍💼 สถานการณ์สมมติ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>คุณเป็นผู้จัดการที่ต้องวิเคราะห์ข้อมูลให้กับองค์กรของคุณอยู่เสมอ คุณต้องออกแบบการวัดผลงานของทีม และนำเสนอในรูปแบบ Dashboard ต่อผู้บริหาร เพื่อจูงใจให้ผู้บริหารยอมรับการปรับกลยุทธ์การขาย AI จะช่วยคุณในสถานการณ์นี้อย่างไร?</p>
+<h2 id="using-chatgpt-to-plan-your-analytics">Using ChatGPT to Plan Your Analytics<a class="headerlink" href="#using-chatgpt-to-plan-your-analytics" title="Permanent link">&para;</a></h2>
+<p>ChatGPT สามารถช่วยเราวางแผนการทำ dashboard ตั้งแต่ในสเต็ปของการวางแผน เตรียมข้อมูล และออกแบบ measurements ให้กับธุรกิจของเรา</p>
+<pre><code class="language-prompt">I'm a Marketing Operations Manager a large company, overseeing the marketing initiatives for our convenient stores located all around the country. We want to create a dashboard to help us track and optimize our promotional campaigns. Here are some data we have:
+
+1. Sales Data: Daily and weekly sales figures segmented by product code and store location.
+2. Campaign Data: Information on current and past promotional campaigns, including details about discount coupons, loyalty points offers, start data and end date of the promotion linked to sales data by product code and store location.
+3. Redemption Data: Information about the number of coupons or loyalty points redeemed on specific product code and store location.
+
+---
+
+Please think through it step-by-step. What key performance indicators (KPIs) should we ideally track to measure the success of our promotional campaigns at 7-Eleven stores?
+</code></pre>
+<details class="note">
+<summary>Response I got</summary>
+<p>To measure the success of promotional campaigns at 7-Eleven stores, you should track the following key performance indicators (KPIs):</p>
+<ol>
+<li>Sales Growth: Measure the increase in sales during the promotional period compared to a baseline period. This can be tracked daily and weekly by product code and store location.</li>
+<li>Redemption Rate: Calculate the percentage of issued coupons or loyalty points that are redeemed. This helps to understand the effectiveness of the promotional offers.</li>
+<li>Average Transaction Value (ATV): Monitor the average amount spent per transaction during the promotion. Compare this with the ATV before the promotion to see if customers are spending more.</li>
+<li>Customer Footfall: Track the number of customers visiting the stores during the promotion. An increase in footfall can indicate the promotion's attractiveness.</li>
+<li>Product Sell-through Rate: Measure the percentage of inventory sold during the promotion period. This helps to understand how well the promoted products are performing.</li>
+<li>Gross Margin: Evaluate the profit margin on sales during the promotion, considering the cost of discounts and any additional marketing expenses.</li>
+<li>Promotion Uplift: Assess the additional sales generated due to the promotion. This can be calculated by comparing sales of promoted products during the promotion to the sales in a comparable period without promotion.</li>
+<li>Customer Retention Rate: Track how many customers return to the store after participating in the promotion. This helps to understand if the promotion helps in building long-term customer loyalty.</li>
+<li>Basket Size: Measure the number of items per transaction. Promotions might encourage customers to buy more items per visit.</li>
+<li>Campaign ROI (Return on Investment): Calculate the financial return of the promotion compared to the costs associated with running it. This includes the cost of discounts, marketing expenses, and any operational costs.</li>
+<li>Conversion Rate: For digital or targeted campaigns, track the percentage of customers who responded to the promotion (e.g., via email or app notifications) and made a purchase.</li>
+<li>Customer Acquisition Cost (CAC): If the promotion targets new customers, measure the cost to acquire each new customer through the promotion.</li>
+<li>Churn Rate: For loyalty points promotions, measure the rate at which customers stop participating in the loyalty program before and after the promotion.</li>
+</ol>
+</details>
+<p>By tracking these KPIs, you can gain insights into the effectiveness of your promotional campaigns and identify areas for improvement to optimize future campaigns.</p>
+<pre><code class="language-prompt">Here's my data schema:
+
+### Sales Data
+
+1. **sale_id**: INT - Unique identifier for each sale record.
+2. **date**: DATE - Date of the sale.
+3. **week_number**: INT - Week number of the sale.
+4. **store_id**: INT - Identifier for the store location.
+5. **product_code**: VARCHAR(20) - Unique code for the product.
+6. **quantity_sold**: INT - Number of units sold.
+7. **total_sales**: DECIMAL(10,2) - Total sales amount.
+
+### Campaign Data
+
+1. **campaign_id**: INT - Unique identifier for each campaign.
+2. **campaign_name**: VARCHAR(100) - Name of the promotional campaign.
+3. **start_date**: DATE - Start date of the campaign.
+4. **end_date**: DATE - End date of the campaign.
+5. **discount_coupon**: VARCHAR(20) - Code for the discount coupon, if applicable.
+6. **loyalty_points**: INT - Loyalty points offered during the campaign.
+7. **product_code**: VARCHAR(20) - Unique code for the product involved.
+8. **store_id**: INT - Identifier for the store location.
+
+### Redemption Data (with Customer Data)
+
+1. **redemption_id**: INT - Unique identifier for each redemption record.
+2. **date**: DATE - Date of redemption.
+3. **store_id**: INT - Identifier for the store location.
+4. **product_code**: VARCHAR(20) - Unique code for the product redeemed.
+5. **coupon_code**: VARCHAR(20) - Code for the coupon used, if applicable.
+6. **loyalty_points**: INT - Loyalty points redeemed.
+7. **customer_id**: INT - Unique identifier for the customer.
+8. **membership_status**: VARCHAR(20) - Membership status of the customer (e.g., Gold, Silver, Bronze).
+
+I'm interested in the following metrics:
+1. Product Sell-through Rate: Measure the units of inventory sold during the promotion period. This helps to understand how well the promoted products are sold through.
+2. Promotion Uplift: Assess the additional sales generated due to the promotion. This can be calculated by comparing gross sales of promoted products during the promotion to the sales in a comparable period without promotion.
+3. Campaign ROI (Return on Investment): Calculate the financial return of the promotion compared to the costs associated with running it. This includes the cost of discounts, marketing expenses, and any operational costs.
+
+Do I have enough data to measure these metrics? Please think through it step-by-step. For each metrics explain formula for computation and mention the columns you will use to calculate the metrics. If we miss data, please tell me what data are missing.
+</code></pre>
+<p><img alt="ChatGPT's Response" src="../images/image-03.png" /></p>
+<details class="note">
+<summary>Response I got</summary>
+<p>Let's go through each metric step-by-step to determine if you have enough data and how you can compute them using your data schema.</p>
+<h4 id="1-product-sell-through-rate">1. Product Sell-through Rate<a class="headerlink" href="#1-product-sell-through-rate" title="Permanent link">&para;</a></h4>
+<p><strong>Formula</strong>: [ \text{Sell-through Rate} = \left( \frac{\text{Total Quantity Sold during Promotion}}{\text{Total Inventory at the Start of Promotion}} \right) \times 100 ]</p>
+<p><strong>Required Columns</strong>:</p>
+<ul>
+<li>From Sales Data: <code>date</code>, <code>store_id</code>, <code>product_code</code>, <code>quantity_sold</code></li>
+<li>From Campaign Data: <code>start_date</code>, <code>end_date</code>, <code>product_code</code>, <code>store_id</code></li>
+</ul>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Filter sales data to include only the dates within the promotion period.</li>
+<li>Sum the <code>quantity_sold</code> for each <code>product_code</code> and <code>store_id</code> during the promotion period.</li>
+</ol>
+<p><strong>Missing Data</strong>:</p>
+<ul>
+<li>Total inventory at the start of the promotion for each <code>product_code</code> and <code>store_id</code>.</li>
+</ul>
+<p><strong>Note</strong>: To calculate the sell-through rate accurately, you need the starting inventory levels for each product at each store.</p>
+<h4 id="2-promotion-uplift">2. Promotion Uplift<a class="headerlink" href="#2-promotion-uplift" title="Permanent link">&para;</a></h4>
+<p><strong>Formula</strong>: [ \text{Promotion Uplift} = \left( \frac{\text{Total Sales during Promotion} - \text{Total Sales in Comparable Period}}{\text{Total Sales in Comparable Period}} \right) \times 100 ]</p>
+<p><strong>Required Columns</strong>:</p>
+<ul>
+<li>From Sales Data: <code>date</code>, <code>store_id</code>, <code>product_code</code>, <code>total_sales</code></li>
+<li>From Campaign Data: <code>start_date</code>, <code>end_date</code>, <code>product_code</code>, <code>store_id</code></li>
+</ul>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Filter sales data for the promotion period and the comparable period (e.g., same length of time immediately before the promotion or same period in the previous year).</li>
+<li>Sum the <code>total_sales</code> for each <code>product_code</code> and <code>store_id</code> during both periods.</li>
+<li>Compute the uplift using the formula.</li>
+</ol>
+<p><strong>Note</strong>: Ensure that the comparable period is appropriately selected to avoid seasonal variations.</p>
+<h4 id="3-campaign-roi-return-on-investment">3. Campaign ROI (Return on Investment)<a class="headerlink" href="#3-campaign-roi-return-on-investment" title="Permanent link">&para;</a></h4>
+<p><strong>Formula</strong>: [ \text{Campaign ROI} = \left( \frac{\text{Net Profit from Campaign} - \text{Cost of Campaign}}{\text{Cost of Campaign}} \right) \times 100 ]</p>
+<p><strong>Required Columns</strong>:</p>
+<ul>
+<li>From Sales Data: <code>date</code>, <code>store_id</code>, <code>product_code</code>, <code>total_sales</code></li>
+<li>From Campaign Data: <code>start_date</code>, <code>end_date</code>, <code>discount_coupon</code>, <code>loyalty_points</code>, <code>product_code</code>, <code>store_id</code></li>
+</ul>
+<p><strong>Additional Data Needed</strong>:</p>
+<ul>
+<li>Cost of discounts (can be derived from <code>discount_coupon</code> if value per coupon is known).</li>
+<li>Cost of loyalty points (can be derived from <code>loyalty_points</code> if value per point is known).</li>
+<li>Marketing expenses.</li>
+<li>Operational costs.</li>
+</ul>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>Calculate the total revenue generated during the campaign period from <code>total_sales</code>.</li>
+<li>Estimate the cost of discounts and loyalty points redeemed using the redemption data.</li>
+<li>Subtract the campaign costs (discounts, loyalty points, marketing, operational) from the total revenue to get the net profit.</li>
+<li>Calculate ROI using the formula.</li>
+</ol>
+<p><strong>Missing Data</strong>:</p>
+<ul>
+<li>Exact value of discounts associated with <code>discount_coupon</code>.</li>
+<li>Value of <code>loyalty_points</code>.</li>
+<li>Marketing expenses and operational costs associated with each campaign.</li>
+</ul>
+<h4 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h4>
+<p><strong>Data You Have</strong>:</p>
+<ul>
+<li>Sales figures (daily and weekly) segmented by product and store location.</li>
+<li>Campaign details including start and end dates, product codes, and store locations.</li>
+<li>Redemption data including coupons and loyalty points used.</li>
+</ul>
+<p><strong>Data You Need</strong>:</p>
+<ul>
+<li>Starting inventory levels for calculating the sell-through rate.</li>
+<li>Values associated with discount coupons and loyalty points.</li>
+<li>Marketing and operational costs for calculating the ROI.</li>
+</ul>
+<p>With the available data and some additional data on inventory levels, coupon values, loyalty points values, and campaign costs, you will be able to measure the required metrics accurately.</p>
+</details>
+<p>ChatGPT ยังตอบผิดอยู่บ้าง เช่น ตรง Campaign ROI สูตรผิด แต่ก็ทำให้เราเห็นถึงช่องโหว่ของข้อมูลของเราที่คิดไม่ถึง และเขียนสูตรออกมาให้เราตรวจสอบและตัดสินใจได้เร็วกว่าการมานั่งร่างสูตรด้วยตัวเองโดยไม่มีผู้ช่วย หรือเสิชหาสูตรจากอินเตอร์เน็ตทีละอัน ถ้าสูตรไม่ถูกต้องเราสามารถบอกให้ ChatGPT แก้ไขได้</p>
+<h2 id="dashboard-designs">Dashboard Designs<a class="headerlink" href="#dashboard-designs" title="Permanent link">&para;</a></h2>
+<p>การจะสร้าง dashboard ขึ้นมาเราอาจจะต้องคำนึงถึงคนที่จะดูข้อมูลจาก dashboard นี้ (เช่น ผู้บริหาร) และอาจจะต้องมีความคิดสร้างสรรค์ว่าจะสร้าง dashboard อย่างไรให้ตรงใจ อาจจะใช้ prompt ต่อไปนี้</p>
+<pre><code class="language-prompt">My boss is often worried about the overall impact and efficiency of our promotional campaigns. She has talked about the following concerns.
+
+1. Campaign &amp; Customer Interaction: She wants to know if the campaigns are reaching the right audience and if the customers who engage with the promotions are also the ones contributing significantly to our sales.
+
+2. Customer Retention: She is interested in understanding whether the promotions are helping to retain existing customers and attract new ones. Are we seeing an increase in repeat purchases from customers who used the coupons or loyalty points?
+
+Can you design the dashboard to address her concerns. Please visualize a perfect dashboard for my boss panel-by-panel. In each panel, please list all the metrics and provide a description of how these metrics can be computed. What data are needed to compute them.
+</code></pre>
+<details class="note">
+<summary>Response I got</summary>
+<p>To design a comprehensive dashboard that addresses your boss's concerns, we can create multiple panels, each focusing on a specific aspect of the promotional campaigns. Here’s a visualization of the perfect dashboard, panel-by-panel, with the relevant metrics, descriptions, and data requirements.</p>
+<h3 id="panel-1-campaign-customer-interaction">Panel 1: Campaign &amp; Customer Interaction<a class="headerlink" href="#panel-1-campaign-customer-interaction" title="Permanent link">&para;</a></h3>
+<p><strong>Metrics:</strong></p>
+<ol>
+<li>
+<p><strong>Customer Reach</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Measures the number of unique customers who engaged with the promotion (used a coupon or loyalty points).</li>
+<li><strong>Computation</strong>: Count of unique <code>customer_id</code> in <code>Redemption Data</code>.</li>
+<li><strong>Data Needed</strong>: <code>customer_id</code>, <code>coupon_code</code>, <code>loyalty_points</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customer Contribution to Sales</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Total sales attributed to customers who engaged with the promotions.</li>
+<li><strong>Computation</strong>: Sum of <code>total_sales</code> for sales records where <code>customer_id</code> is found in <code>Redemption Data</code>.</li>
+<li><strong>Data Needed</strong>: <code>customer_id</code>, <code>total_sales</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Engagement Rate</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Percentage of total customers who engaged with the promotion.</li>
+<li><strong>Computation</strong>: (\frac{\text{Unique Customers Engaged}}{\text{Total Customers}} \times 100)</li>
+<li><strong>Data Needed</strong>: <code>customer_id</code> in both Sales and Redemption Data.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Visualization:</strong></p>
+<ul>
+<li>Bar chart showing the number of engaged customers per campaign.</li>
+<li>Pie chart representing the proportion of sales contributed by engaged customers.</li>
+<li>Line chart tracking engagement rate over different campaigns.</li>
+</ul>
+<h3 id="panel-2-customer-retention">Panel 2: Customer Retention<a class="headerlink" href="#panel-2-customer-retention" title="Permanent link">&para;</a></h3>
+<p><strong>Metrics:</strong></p>
+<ol>
+<li>
+<p><strong>Repeat Purchase Rate</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Percentage of customers who made repeat purchases after engaging with the promotion.</li>
+<li><strong>Computation</strong>: (\frac{\text{Customers with Repeat Purchases}}{\text{Total Customers Engaged}} \times 100)</li>
+<li><strong>Data Needed</strong>: <code>customer_id</code>, <code>date</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>New vs. Returning Customers</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Number of new customers versus returning customers engaging with the promotion.</li>
+<li><strong>Computation</strong>: Count of new <code>customer_id</code> (first-time buyers) and returning <code>customer_id</code>.</li>
+<li><strong>Data Needed</strong>: <code>customer_id</code>, <code>date</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customer Lifetime Value (CLV)</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Predicted net profit attributed to the entire future relationship with a customer.</li>
+<li><strong>Computation</strong>: CLV formula considering <code>total_sales</code> and frequency of purchases.</li>
+<li><strong>Data Needed</strong>: <code>customer_id</code>, <code>total_sales</code>, <code>date</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Visualization:</strong></p>
+<ul>
+<li>Bar chart showing the number of repeat vs. one-time purchases.   </li>
+<li>Stacked bar chart comparing new vs. returning customers.</li>
+<li>Line graph showing trends in Customer Lifetime Value over time.</li>
+</ul>
+<h3 id="panel-3-campaign-analysis-why-campaigns-work-or-fail">Panel 3: Campaign Analysis (Why Campaigns Work or Fail)<a class="headerlink" href="#panel-3-campaign-analysis-why-campaigns-work-or-fail" title="Permanent link">&para;</a></h3>
+<p><strong>Metrics:</strong></p>
+<ol>
+<li>
+<p><strong>Sales Uplift</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Additional sales generated due to the campaign. </li>
+<li><strong>Computation</strong>: (\text{Sales During Campaign} - \text{Baseline Sales})</li>
+<li><strong>Data Needed</strong>: <code>total_sales</code>, <code>date</code>, <code>start_date</code>, <code>end_date</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customer Feedback</strong> (if available):</p>
+<ul>
+<li><strong>Description</strong>: Qualitative data on customer satisfaction and feedback regarding the promotions.</li>
+<li><strong>Computation</strong>: Analysis of survey or feedback data.</li>
+<li><strong>Data Needed</strong>: Customer survey or feedback forms.</li>
+</ul>
+</li>
+<li>
+<p><strong>Promotion Cost Analysis</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Total cost of running the promotion including discounts, loyalty points, marketing, and operational costs.</li>
+<li><strong>Computation</strong>: Sum of all costs associated with the promotion.</li>
+<li><strong>Data Needed</strong>: Cost per coupon, monetary value per loyalty point, marketing expenses, operational costs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Conversion Rate</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Percentage of customers who made a purchase after seeing the promotion.</li>
+<li><strong>Computation</strong>: (\frac{\text{Customers who Purchased}}{\text{Customers who Viewed Promotion}} \times 100)</li>
+<li><strong>Data Needed</strong>: <code>customer_id</code>, <code>campaign_id</code>, interaction data (views/clicks if available).</li>
+</ul>
+</li>
+</ol>
+<p><strong>Visualization:</strong></p>
+<ul>
+<li>Comparative bar chart showing sales uplift for different campaigns.</li>
+<li>Pie chart displaying the distribution of campaign costs.</li>
+<li>Line chart indicating conversion rates across various campaigns.</li>
+</ul>
+<h3 id="panel-4-overall-impact-and-efficiency">Panel 4: Overall Impact and Efficiency<a class="headerlink" href="#panel-4-overall-impact-and-efficiency" title="Permanent link">&para;</a></h3>
+<p><strong>Metrics:</strong></p>
+<ol>
+<li>
+<p><strong>ROI (Return on Investment)</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Financial return of the promotion compared to the costs associated.</li>
+<li><strong>Computation</strong>: (\frac{\text{Net Profit}}{\text{Total Cost}} \times 100)</li>
+<li><strong>Data Needed</strong>: <code>total_sales</code>, campaign costs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Overall Campaign Performance</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Aggregate performance metrics of all campaigns.</li>
+<li><strong>Computation</strong>: Summary statistics (mean, median, total) for sales uplift, engagement rate, repeat purchase rate, etc.</li>
+<li><strong>Data Needed</strong>: All relevant metrics data.</li>
+</ul>
+</li>
+<li>
+<p><strong>Trend Analysis</strong>:</p>
+<ul>
+<li><strong>Description</strong>: Trends in key metrics over time to identify patterns.</li>
+<li><strong>Computation</strong>: Time-series analysis of sales, engagement, retention, etc.</li>
+<li><strong>Data Needed</strong>: Time-stamped data for all metrics.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Visualization:</strong></p>
+<ul>
+<li>KPI dashboard with summary metrics.</li>
+<li>Heatmap showing performance metrics across different stores and campaigns.</li>
+<li>Time-series line charts showing trends in key metrics.</li>
+</ul>
+<h3 id="summary_1">Summary<a class="headerlink" href="#summary_1" title="Permanent link">&para;</a></h3>
+<p>By creating panels focused on Campaign &amp; Customer Interaction, Customer Retention, Campaign Analysis, and Overall Impact and Efficiency, the dashboard will provide a holistic view of the promotional campaigns' performance. Each panel will utilize specific metrics calculated from the given data and additional data where necessary to provide actionable insights into campaign effectiveness and areas for improvement.</p>
+</details>
+<p>เราอาจจะใช้ ChatGPT เพื่อเพิ่มความกระจ่างในปัญหาที่ผู้บริหารสงสัย แต่เราไม่แน่ใจว่าจะตอบคำถามได้อย่างไรด้วยข้อมูล เช่น </p>
+<pre><code class="language-prompt">My boss is often worried Why Campaigns Work or Fail: She wants data to inform us why some campaigns fly and some campaigns fail.
+
+In a retail store like 7-Eleven, what determines the success or failure of a coupon campaign? What analytic angle should we look into to answer the above question?
+</code></pre>
+<details class="note">
+<summary>Response I got</summary>
+<p>In a retail store like 7-Eleven, the success or failure of a coupon campaign can be influenced by various factors. To determine these, it's essential to analyze the campaign from multiple angles. Here are some key factors and the corresponding analytics angles to consider:</p>
+<ol>
+<li>
+<p><strong>Target Audience Alignment:</strong></p>
+<ul>
+<li><strong>Customer Segmentation Analysis:</strong> Assess whether the coupons were distributed to the right customer segments. Look at demographic data, purchasing behavior, and loyalty program participation to see if the targeted audience aligns with the customers who actually redeemed the coupons.</li>
+</ul>
+</li>
+<li>
+<p><strong>Timing and Duration:</strong></p>
+<ul>
+<li><strong>Sales Trend Analysis:</strong> Evaluate sales patterns before, during, and after the campaign. Compare these with historical data to understand the timing's impact. Analyze if the campaign coincided with seasonal trends, holidays, or other significant events.</li>
+</ul>
+</li>
+<li>
+<p><strong>Promotion Awareness:</strong></p>
+<ul>
+<li><strong>Marketing Channel Effectiveness:</strong> Analyze the performance of different marketing channels (e.g., social media, email, in-store promotions). Look at metrics like reach, engagement, and conversion rates to determine how well the promotion was communicated to potential customers.</li>
+</ul>
+</li>
+<li>
+<p><strong>Offer Attractiveness:</strong></p>
+<ul>
+<li>
+<p><strong>Redemption Rates:</strong> Measure the percentage of distributed coupons that were redeemed. High redemption rates indicate that the offer was appealing, while low rates may suggest that the discount or incentive was not compelling enough.</p>
+</li>
+<li>
+<p><strong>Customer Feedback and Surveys:</strong> Collect and analyze feedback from customers to understand their perceptions of the offer's value.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Product Selection:</strong></p>
+<ul>
+<li><strong>Product Performance Analysis:</strong> Examine the sales data for the specific products included in the promotion. Determine if the promoted products were popular or had a high turnover rate before the campaign. Analyze inventory levels to ensure the products were sufficiently stocked.</li>
+</ul>
+</li>
+<li>
+<p><strong>In-Store Execution:</strong></p>
+<ul>
+<li><strong>Store Compliance Checks:</strong> Evaluate how well the campaign was executed in stores. Check if the promotional materials were displayed correctly and if staff were informed and motivated to promote the campaign. This can be done through store audits or mystery shopper reports.</li>
+</ul>
+</li>
+<li>
+<p><strong>Competitive Landscape:</strong></p>
+<ul>
+<li><strong>Market Benchmarking:</strong> Compare the campaign's performance against similar promotions run by competitors. This can provide insights into whether external factors, like competitor offers, influenced the campaign's success or failure.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pricing Strategy:</strong></p>
+<ul>
+<li><strong>Price Sensitivity Analysis:</strong> Assess how price changes influenced customer behavior. Determine if the discount provided was significant enough to drive purchases without eroding profit margins.</li>
+</ul>
+</li>
+<li>
+<p><strong>Operational Efficiency:</strong></p>
+<ul>
+<li><strong>Logistics and Supply Chain Analysis:</strong> Evaluate if there were any logistical issues that affected the campaign, such as stockouts or delayed shipments. Ensure that the supply chain was prepared to handle the increased demand generated by the promotion.</li>
+</ul>
+</li>
+</ol>
+<p>By examining these factors and analytics angles, you can gain a comprehensive understanding of why certain coupon campaigns succeed while others fail. This will enable you to optimize future campaigns and make data-driven decisions to enhance their effectiveness.</p>
+</details>
+<pre><code class="language-prompt">If I want to calculate how much of the campaign performance is lost due to inventory shortage, what metrics should be calculated and what data are needed?
+</code></pre>
+<details class="note">
+<summary>Response I got</summary>
+<p>To calculate how much of the campaign performance is lost due to inventory shortage, you will need to analyze several metrics and gather specific data. Here’s a structured approach to accomplish this:</p>
+<h3 id="key-metrics-to-calculate">Key Metrics to Calculate:<a class="headerlink" href="#key-metrics-to-calculate" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Stockout Rate:</strong></p>
+<ul>
+<li>The percentage of time during the campaign period when the promoted products were out of stock.</li>
+</ul>
+</li>
+<li>
+<p><strong>Lost Sales Due to Stockouts:</strong></p>
+<ul>
+<li>The estimated sales that were lost because the products were not available when customers wanted to purchase them.</li>
+</ul>
+</li>
+<li>
+<p><strong>Unfulfilled Demand:</strong></p>
+<ul>
+<li>The difference between the potential demand (based on normal and campaign-influenced demand) and the actual sales due to inventory shortages.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customer Satisfaction Impact:</strong></p>
+<ul>
+<li>Indirect metric, often measured through customer feedback, indicating how stockouts affected customer satisfaction and future purchasing behavior.</li>
+</ul>
+</li>
+</ol>
+<h3 id="data-needed">Data Needed:<a class="headerlink" href="#data-needed" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Sales Data:</strong></p>
+<ul>
+<li>Daily and weekly sales figures segmented by product code and store location.    </li>
+<li>Historical sales data for the same products and locations for baseline comparisons.</li>
+</ul>
+</li>
+<li>
+<p><strong>Inventory Data:</strong></p>
+<ul>
+<li>Daily inventory levels for each promoted product at each store location.</li>
+<li>Records of stock replenishment dates and quantities.</li>
+</ul>
+</li>
+<li>
+<p><strong>Campaign Data:</strong></p>
+<ul>
+<li>Details of the promotional campaign, including start and end dates, promoted product codes, and expected uplift in demand.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customer Data (Optional):</strong></p>
+<ul>
+<li>Customer feedback or complaints related to stockouts.</li>
+<li>Purchase intent data if available (e.g., items added to online shopping carts but not purchased due to unavailability).</li>
+</ul>
+</li>
+</ol>
+<h3 id="steps-to-calculate-metrics">Steps to Calculate Metrics:<a class="headerlink" href="#steps-to-calculate-metrics" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Calculate Stockout Rate:</strong></p>
+<ul>
+<li><strong>Formula:</strong> Stockout Rate = (Days Out of Stock / Total Campaign Days) * 100</li>
+<li><strong>Data Required:</strong> Daily inventory levels for each product during the campaign period.</li>
+</ul>
+</li>
+<li>
+<p><strong>Estimate Lost Sales Due to Stockouts:</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Identify days when stockouts occurred for each product.</li>
+<li><strong>Step 2:</strong> Calculate the average daily sales of the promoted products before the stockout period.</li>
+<li><strong>Step 3:</strong> Estimate potential sales during the stockout period by multiplying the average daily sales by the number of stockout days.</li>
+<li><strong>Formula:</strong> Lost Sales = Average Daily Sales * Stockout Days</li>
+<li><strong>Data Required:</strong> Historical sales data, daily sales data during the campaign, and stockout days.</li>
+</ul>
+</li>
+<li>
+<p><strong>Determine Unfulfilled Demand:</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Calculate expected demand based on the promotional uplift (compare campaign period sales to a comparable period without the promotion).</li>
+<li><strong>Step 2:</strong> Subtract actual sales (considering stockouts) from the expected demand.</li>
+<li><strong>Formula:</strong> Unfulfilled Demand = Expected Demand - Actual Sales</li>
+<li><strong>Data Required:</strong> Sales data during and before the campaign, expected uplift percentage.</li>
+</ul>
+</li>
+<li>
+<p><strong>Analyze Customer Satisfaction Impact (Optional):</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Gather customer feedback or complaints related to product availability.</li>
+<li><strong>Step 2:</strong> Analyze the feedback to quantify dissatisfaction related to stockouts.</li>
+<li><strong>Data Required:</strong> Customer feedback, surveys, complaint logs.</li>
+</ul>
+</li>
+</ol>
+<h3 id="example-calculation">Example Calculation:<a class="headerlink" href="#example-calculation" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>Stockout Rate Calculation:</strong></p>
+<ul>
+<li>If a product was out of stock for 5 days during a 30-day campaign: Stockout Rate = (5 / 30) * 100 = 16.67%</li>
+</ul>
+</li>
+<li>
+<p><strong>Lost Sales Due to Stockouts:</strong></p>
+<ul>
+<li>If the average daily sales of the product were 100 units, and the product was out of stock for 5 days: Lost Sales = 100 units/day * 5 days = 500 units</li>
+</ul>
+</li>
+<li>
+<p><strong>Unfulfilled Demand:</strong></p>
+<ul>
+<li>If the expected demand (based on the promotional uplift) was 4000 units, but actual sales were 3500 units due to stockouts: Unfulfilled Demand = 4000 units - 3500 units = 500 units</li>
+</ul>
+</li>
+</ol>
+<p>By calculating these metrics, you can quantify the impact of inventory shortages on your campaign performance. This analysis will help you understand the lost sales opportunities and make informed decisions to improve inventory management for future campaigns.</p>
+</details>
+<h2 id="data-understanding-with-chatgpt">Data Understanding with ChatGPT<a class="headerlink" href="#data-understanding-with-chatgpt" title="Permanent link">&para;</a></h2>
+<p>แบบฝึกหัดต่อไปเราจะลองใช้ ChatGPT เพื่อทำความเข้าใจข้อมูลที่เราได้รับมา</p>
+<p>Note: ฟังก์ชันที่จะโชว์ต่อไปนี้มีแต่ใน ChatGPT Paid Plan เท่านั้น เมื่อเร็วๆนี้ ChatGPT ประกาศว่ากำลังเร่งพัฒนาฟีเจอร์ใหม่ที่ใช้เพื่อการทำ data analytics โดยเฉพาะ</p>
+<p>เราจะใช้ข้อมูล retail purchase จาก <a href="https://www.kaggle.com/datasets/prasad22/retail-transactions-dataset">Kaggle</a> ที่ถูกลดทอนให้สั้นเหลือ 250 แถวเพื่อการทดลอง สามารถดาวน์โหลดมาเล่นได้เลยค่ะ</p>
+<details class="note">
+<summary>ตัวอย่างการ describe และ visualize ข้อมูล</summary>
+<p><a href="https://chatgpt.com/share/6802e81d-31e0-8011-a148-594f9e8ae8ed">https://chatgpt.com/share/6802e81d-31e0-8011-a148-594f9e8ae8ed</a></p>
+</details>
+<details class="note">
+<summary>ตัวอย่างการวิเคราะห์ข้อมูลเพื่อตอบคำถาม</summary>
+<p><a href="https://chatgpt.com/share/8d5aea7a-87e4-4e0a-b949-7e6b5f138347">https://chatgpt.com/share/8d5aea7a-87e4-4e0a-b949-7e6b5f138347</a></p>
+</details>
+<h2 id="cautions">Cautions:<a class="headerlink" href="#cautions" title="Permanent link">&para;</a></h2>
+<h3 id="chatgpt-is-not-a-data-analytic-tool">ChatGPT is not a data analytic tool.<a class="headerlink" href="#chatgpt-is-not-a-data-analytic-tool" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Generative AI โดยทั่วไปเป็นได้เพียงผู้ช่วยให้ data scientist/data analyst ทำงานแต่ละสเต็ปได้ง่ายขึ้น เอไอไม่สามารถทำการวิเคราะห์ข้อมูลแทนผู้เชี่ยวชาญได้ในขณะนี้ </p>
+</li>
+<li>
+<p>สำหรับผู้เชี่ยวชาญด้านการวิเคราะห์ข้อมูล ChatGPT เป็นเครื่องมือที่ใช้ค่อนข้างยาก เพราะโค้ดที่เขียนออกมาอาจจะผิดหรือไม่ถูกหลักการการจัดการข้อมูลทุกครั้ง ต้องสั่งให้ทำใหม่ ไม่สามารถปรับเปลี่ยนข้อมูล (data wrangling) ได้ตามใจ  บ่อยครั้งอาจจะต้องก๊อปโค้ดไปแก้และรันข้างนอกเพื่อให้ได้ผลลัพธ์ที่ต้องการ แต่ถ้าเป็นงานวิเคราะห์หรือสร้างกราฟที่ไม่ซับซ้อนมากจะเร็วกว่าทำเอง (ใน BI Software เช่น Tableau เราสามารถสั่งเอไอทำแล้วถ้าผลลัพธ์ออกมาไม่ถูกก็สามารถแก้ไขได้เลยในหน้าเดียวกัน เป็นประสบการณ์ผู้ใช้ที่ดีกว่า)</p>
+</li>
+<li>
+<p>สิ่งที่ ChatGPT หรือ Generative AI ทำออกมามีโอกาสผิด (เช่นเดียวกับมนุษย์ทั่วไป) เช่น ChatGPT อาจจะคำนวณค่าเฉลี่ย ค่าสูงสุด ต่ำสุดออกมาผิด ซึ่งอาจจะเกิดจาก hallucination และความสามารถที่ยังจำกัด และจะยิ่งเป็นมากในกรณีที่ได้รับ prompt ที่กำกวม จึงต้องตรวจสอบโค้ดที่เขียนออกมาเสมอว่าเขียนฟังก์ชันวิเคราะห์ข้อมูลถูกหรือไม่ </p>
+</li>
+<li>
+<p>ChatGPT ไม่ได้ถูกออกแบบมาให้วิเคราะห์ข้อมูลขนาดใหญ่จึงมีข้อจำกัดเรื่องไซส์ของข้อมูลที่จะอัพโหลดขึ้นไป (ไม่เกิน 50 MB สำหรับ csv file) สามารถศึกษาข้อจำกัดนี้ได้ในลิงค์นี้ <a href="https://help.openai.com/en/articles/8555545-file-uploads-faq">link</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
