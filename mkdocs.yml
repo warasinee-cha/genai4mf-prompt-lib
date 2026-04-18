@@ -1,0 +1,51 @@
+site_name: Gen AI for Modern Workforce - Prompt Lib
+site_url: https://warasinee-cha.github.io/genai4mf-prompt-lib/
+
+theme:
+  name: material
+  palette:
+    primary: amber
+  features:
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true
+      toc_depth: 2
+
+nav:
+  - Home: index.md
+  - Main Tools: main-tools.md
+  - Talk to AI: talk-to-ai.md
+  - Fun Prompts: fun-prompts.md
+  - Gen AI Basics:
+      - Personalized Learning (Startup Founder): pe-personalized-learning.md
+      - Personalized Learning (Factory Manager): pe-personalized-learning-v2.md
+      - English Communication: pe-english-communication.md
+      - Creativity Boost: pe-creativity-boost.md
+      - Writing Task: pe-writing-task-v2.md
+  - Gen AI for Every Day Tasks:
+      - Meeting Toolkit: edt-meeting-toolkit.md
+      - Presentation Toolkit: edt-presentation-toolkit.md
+      - Data Analytics: pe-data-analytics-v2.md
+  - AI-Enabled Creations:
+      - Cards: ac-cards.md
+      - Infographics: ac-infographics.md
+      - Website: ac-website.md
+      - Web application: ac-web-application.md
+      - Video: ac-video.md
+      - Talking Agent: ac-talking-agent.md
+      - Interior Design: ac-interior.md
+  - Other Tools:
+      - Deep Research: at-deep-research.md
+      - Canva AI Features: canva-ai.md
+      - Gamma.app: gamma-app.md
+      - Suno: suno-video.md
+      - Luma AI: luma-ai-video.md
+  - Resources:
+      - Generative AI Basics: generative-ai-basics.md
+
+extra_css:
+  - stylesheets/extra.css

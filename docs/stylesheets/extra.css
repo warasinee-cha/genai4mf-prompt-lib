@@ -1,0 +1,54 @@
+/* Enable line wrapping in code blocks */
+.md-typeset pre>code {
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+}
+
+.video-wrapper {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.ac-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.ac-gallery img {
+  height: 320px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.ac-gallery-large img {
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.ac-gallery-fullbleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 1rem 0;
+}
+.ac-gallery-fullbleed img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+.video-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
