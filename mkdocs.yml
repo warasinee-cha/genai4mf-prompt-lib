@@ -29,7 +29,8 @@ nav:
   - Gen AI for Every Day Tasks:
       - Meeting Toolkit: edt-meeting-toolkit.md
       - Presentation Toolkit: edt-presentation-toolkit.md
-      - Data Analytics: pe-data-analytics-v2.md
+      - Data Analytics (New): pe-data-analytics-v2.md
+      - Data Analytics (Old): pe-data-analytics.md
   - AI-Enabled Creations:
       - Cards: ac-cards.md
       - Infographics: ac-infographics.md

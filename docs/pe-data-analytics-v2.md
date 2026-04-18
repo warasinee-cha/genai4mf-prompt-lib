@@ -6,6 +6,8 @@
 
 ## ตัวอย่างจริง — Claude
 
+เราจะใช้ข้อมูล retail purchase จาก [Kaggle](https://www.kaggle.com/datasets/prasad22/retail-transactions-dataset) สามารถดาวน์โหลดมาเล่นได้เลยค่ะ
+
 อัปโหลดไฟล์ข้อมูลธุรกรรมร้านค้า แล้วใช้ prompt นี้:
 
 ```prompt
