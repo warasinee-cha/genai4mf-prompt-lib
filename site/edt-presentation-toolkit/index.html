@@ -1,0 +1,1519 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://warasinee-cha.github.io/genai4mf-prompt-lib/edt-presentation-toolkit/">
+      
+      
+        <link rel="prev" href="../edt-meeting-toolkit/">
+      
+      
+        <link rel="next" href="../pe-data-analytics-v2/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Presentation Toolkit - Gen AI for Modern Workforce - Prompt Lib</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#presentation-toolkit-content-ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-header__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gen AI for Modern Workforce - Prompt Lib
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Presentation Toolkit
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-nav__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Gen AI for Modern Workforce - Prompt Lib
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../talk-to-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talk to AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fun-prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fun Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gen AI Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Gen AI Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personalized Learning (Startup Founder)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personalized Learning (Factory Manager)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-english-communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    English Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-creativity-boost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creativity Boost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-writing-task-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gen AI for Every Day Tasks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Gen AI for Every Day Tasks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edt-meeting-toolkit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meeting Toolkit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Presentation Toolkit
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Presentation Toolkit
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gemini-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ก่อนเริ่ม: Gemini Canvas คืออะไร
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-chatgpt-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 1: กลั่นเนื้อหาด้วย ChatGPT หรือ Claude
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-ai-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 1 — ให้ AI ค้นข้อมูลและรวบรวม evidence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-evidence-slide-outline" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 2 — นำ evidence ที่ตรวจแล้วมาสร้าง slide outline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-outline-gemini-canvas-brand-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 2: ป้อน outline เข้า Gemini Canvas พร้อม brand control
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-brand-spec" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ — prompt สร้างสไลด์พร้อม brand spec
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-google-slides-template-brand-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 3: ใช้ Google Slides Template คุม brand ได้ 100%
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-ai-speaker-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Bonus: ให้ AI เขียน speaker notes หลังสร้างสไลด์เสร็จ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pipeline-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุป: Pipeline ที่ใช้ได้กับทุก presentation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-data-analytics-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI-Enabled Creations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            AI-Enabled Creations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-cards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-infographics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Infographics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-website/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-web-application/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web application
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-talking-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talking Agent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-interior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interior Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Other Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Other Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../at-deep-research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deep Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../canva-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canva AI Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamma-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamma.app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../suno-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../luma-ai-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luma AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generative-ai-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative AI Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gemini-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ก่อนเริ่ม: Gemini Canvas คืออะไร
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-chatgpt-claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 1: กลั่นเนื้อหาด้วย ChatGPT หรือ Claude
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-ai-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 1 — ให้ AI ค้นข้อมูลและรวบรวม evidence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-evidence-slide-outline" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 2 — นำ evidence ที่ตรวจแล้วมาสร้าง slide outline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-outline-gemini-canvas-brand-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 2: ป้อน outline เข้า Gemini Canvas พร้อม brand control
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-brand-spec" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ — prompt สร้างสไลด์พร้อม brand spec
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-google-slides-template-brand-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 3: ใช้ Google Slides Template คุม brand ได้ 100%
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-ai-speaker-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Bonus: ให้ AI เขียน speaker notes หลังสร้างสไลด์เสร็จ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pipeline-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุป: Pipeline ที่ใช้ได้กับทุก presentation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="presentation-toolkit-content-ai">Presentation Toolkit — จาก content สู่สไลด์ด้วย AI<a class="headerlink" href="#presentation-toolkit-content-ai" title="Permanent link">&para;</a></h1>
+<p>ปัญหาที่เกิดขึ้นบ่อยที่สุดตอนทำสไลด์: เปิด PowerPoint หรือเครื่องมือ AI ก่อน แล้วค่อยคิดว่าจะพูดอะไร — ผลที่ได้คือสไลด์ที่ดูดีแต่เนื้อหาไม่แน่น หรือเนื้อหาแน่นแต่ยัดใส่สไลด์เกินไป</p>
+<p>วิธีที่ถูกต้อง: <strong>คิดเนื้อหาก่อน ออกแบบทีหลัง</strong></p>
+<p>หน้านี้จะสอน 2 ขั้นตอน โดยใช้สถานการณ์จริง: <strong>การทำสไลด์โน้มน้าวทีม SOLA มหาวิทยาลัย KMUTT ให้รับโปรแกรม AI competency สำหรับอาจารย์และบุคลากร</strong></p>
+<ol>
+<li><strong>ใช้ ChatGPT หรือ Claude กลั่นเนื้อหา</strong> ให้อยู่ในรูปแบบที่พร้อมทำสไลด์</li>
+<li><strong>ป้อนผลลัพธ์เข้า Gemini Canvas</strong> พร้อม prompt ที่ควบคุม brand และ layout</li>
+</ol>
+<hr />
+<h2 id="gemini-canvas">ก่อนเริ่ม: Gemini Canvas คืออะไร<a class="headerlink" href="#gemini-canvas" title="Permanent link">&para;</a></h2>
+<p><a href="https://gemini.google.com">Gemini Canvas</a> คือฟีเจอร์ใน Gemini ที่สร้างสไลด์ในหน้าเดียวกัน แล้ว export เป็น Google Slides ได้โดยตรง ฟรี และไม่ต้องสมัครเพิ่ม</p>
+<p>ข้อดีหลัก: สร้างเร็ว export เข้า Google Slides ได้เลย แก้ไขต่อใน Google Slides ได้ทันที</p>
+<p>ข้อจำกัด: ควบคุม brand ได้จากการ prompt เท่านั้น (ไม่สามารถ import brand file ได้) — แต่มีวิธีแก้ที่จะสอนในแบบฝึกหัดที่ 3</p>
+<hr />
+<h2 id="1-chatgpt-claude">👩🏻‍💼 แบบฝึกหัดที่ 1: กลั่นเนื้อหาด้วย ChatGPT หรือ Claude<a class="headerlink" href="#1-chatgpt-claude" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณเพิ่งประชุมกับทีม SOLA ที่ KMUTT และต้องทำสไลด์โน้มน้าวให้พวกเขาอนุมัติโปรแกรม AI competency สำหรับอาจารย์ คุณมีข้อมูลอยู่ 3 แบบ — เลือก กรณีที่ตรงกับตัวคุณ</p>
+<p>ขั้นตอนนี้ยังไม่ต้องเปิด Gemini Canvas เลย ทำใน ChatGPT หรือ Claude ก่อน</p>
+<hr />
+<h3 id="1-notes">กรณีที่ 1 — มีแค่ notes คร่าวๆ จากการประชุม<a class="headerlink" href="#1-notes" title="Permanent link">&para;</a></h3>
+<h2 id="_1">🚀 ลองทำ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">ฉันต้องทำ presentation เรื่อง: ข้อเสนอโปรแกรม AI Competency สำหรับอาจารย์และบุคลากร SOLA มหาวิทยาลัย KMUTT
+ผู้ฟัง: คณะผู้บริหาร SOLA ที่ต้องตัดสินใจอนุมัติโปรแกรม — มีทั้งคนที่สนับสนุน AI และคนที่ยังไม่แน่ใจ
+เป้าหมาย: ให้ผู้บริหาร SOLA อนุมัติ pilot program 1 ภาคเรียนกับอาจารย์ 20 คน
+จำนวนสไลด์: ไม่เกิน 6 สไลด์
+เวลานำเสนอ: 15 นาที
+
+ข้อมูลที่ฉันมี:
+- อาจารย์ส่วนใหญ่ใช้ AI แบบลองผิดลองถูก ไม่มีทิศทาง
+- นักศึกษา Gen Z ใช้ AI อยู่แล้ว อาจารย์ตามไม่ทัน
+- UNESCO มี AI Competency Framework สำหรับครูอาจารย์ปี 2024
+- เสนอ pilot 20 คน workshop 2 วัน + module 4 สัปดาห์
+- ต้นทุนประมาณ 60,000–80,000 บาท
+- SOLA เป็นหน่วยงานที่เหมาะที่สุดใน KMUTT ที่จะนำเรื่องนี้
+
+ช่วยทำ slide outline ที่:
+- แต่ละสไลด์มี: ชื่อสไลด์ (title), key message 1 ประโยค, bullet ไม่เกิน 3 ข้อ
+- เรียงเรื่องให้ไหลตามโครงสร้าง: ทำไม (context) → อะไร (content) → แล้วยังไง (call to action)
+- ภาษาไทย กระชับ
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างผลลัพธ์ที่ได้</summary>
+<p><strong>Slide 1 — KMUTT และ AI: เราอยู่ตรงไหน?</strong>
+Key message: นักศึกษา Gen Z ใช้ AI เป็นงานประจำอยู่แล้ว — อาจารย์ต้องนำหน้าหรืออย่างน้อยก็ทันเกมส์
+- นักศึกษาใช้ AI ในการเรียน วิจัย และงานกลุ่มทุกวัน
+- อาจารย์ส่วนใหญ่ยังใช้แบบลองผิดลองถูก ไม่มี framework
+- ช่องว่างนี้กำลังกว้างขึ้นทุกภาคเรียน</p>
+<p><strong>Slide 2 — AI Competency คืออะไร (ไม่ใช่แค่ใช้ ChatGPT เป็น)</strong>
+Key message: AI competency คือรู้จักเลือกใช้ ตั้งคำถาม และรับผิดชอบผลลัพธ์
+- 3 ระดับ: Awareness (รู้จัก) → Application (ใช้ได้) → Integration (ฝังในการสอน)
+- อ้างอิง UNESCO AI Competency Framework for Teachers 2024
+- SOLA มีภารกิจด้านการเรียนรู้ที่ตรงกับเนื้อหานี้มากที่สุดใน KMUTT</p>
+<p><strong>Slide 3 — ทำไม SOLA ต้องนำ ไม่ใช่รอ</strong>
+Key message: มหาวิทยาลัยที่รอให้ทุกคนพร้อมก่อนจึงค่อยเริ่ม จะไม่มีวันเริ่ม
+- NUS และ KAIST มีโปรแกรม AI upskilling สำหรับอาจารย์แล้วตั้งแต่ปี 2023
+- SOLA ในฐานะหน่วยงานด้านการเรียนรู้คือ natural owner ของเรื่องนี้
+- การเริ่มเร็วกว่าคือข้อได้เปรียบ ไม่ใช่ความเสี่ยง</p>
+<p><strong>Slide 4 — สิ่งที่เสนอ: Pilot Program 1 ภาคเรียน</strong>
+Key message: เริ่มเล็ก วัดผล แล้วขยาย — ไม่ได้ขอ commit ทั้งมหาวิทยาลัยตั้งแต่วันแรก
+- กลุ่ม pilot: อาจารย์และบุคลากร 20 คน คัดเลือกจากหลายคณะ
+- รูปแบบ: Workshop เข้มข้น 2 วัน + self-paced module 4 สัปดาห์
+- วัดผลด้วย pre/post AI competency assessment</p>
+<p><strong>Slide 5 — ต้นทุนและสิ่งที่คาดหวัง</strong>
+Key message: ลงทุน 60,000–80,000 บาท เพื่อให้ได้ framework และบุคลากรนำร่องที่พร้อม scale
+- ค่าใช้จ่าย: ~60,000–80,000 บาท รวม content, facilitator, และ assessment
+- ผลลัพธ์ที่วัดได้: อาจารย์ 20 คนผ่าน competency threshold + blueprint สำหรับการขยายต่อ
+- ระยะเวลา: 1 ภาคเรียน เริ่มได้ทันทีถ้าอนุมัติภายในเดือนนี้</p>
+<p><strong>Slide 6 — ขอ Approve อะไร</strong>
+Key message: ต้องการ 2 อย่าง: อนุมัติงบ และ assign ผู้ประสานงาน 1 คน
+- อนุมัติงบ pilot และกำหนดกลุ่มอาจารย์ภายใน 2 สัปดาห์
+- SOLA assign coordinator — ทีม Indigo Lab รับผิดชอบ content ทั้งหมด
+- นัด kickoff ภายในสิ้นเดือน</p>
+</details>
+<hr />
+<h3 id="2-framework">กรณีที่ 2 — มีเอกสารหรือ framework ที่ยาว<a class="headerlink" href="#2-framework" title="Permanent link">&para;</a></h3>
+<p><strong>ตัวอย่าง:</strong> คุณมี UNESCO AI Competency Framework (30+ หน้า) และต้องการดึงเฉพาะส่วนที่ใช้โน้มน้าว SOLA ออกมาทำสไลด์</p>
+<h2 id="_2">🚀 ลองทำ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">นี่คือเนื้อหาจาก UNESCO AI Competency Framework for Teachers (2024) ส่วนที่เกี่ยวข้อง:
+
+[วาง excerpt จากเอกสาร]
+
+ผู้ฟัง: คณะผู้บริหาร SOLA มหาวิทยาลัย KMUTT — ต้องตัดสินใจว่าจะลงทุนกับโปรแกรม AI competency หรือเปล่า
+เป้าหมาย: ใช้ framework นี้เป็นหลักฐานว่า AI competency สำหรับอาจารย์คือมาตรฐานโลกแล้ว ไม่ใช่ของใหม่ที่ต้องรอพิสูจน์
+จำนวนสไลด์: ไม่เกิน 3 สไลด์ (ใช้เป็นส่วนหนึ่งของ deck ที่ใหญ่กว่า)
+
+ช่วยกลั่นเนื้อหานี้เป็น slide outline โดย:
+- เลือกเฉพาะประเด็นที่ทำให้ผู้บริหารมหาวิทยาลัยรู้สึกว่า &quot;ถ้าไม่ทำ จะล้าหลัง&quot;
+- แต่ละสไลด์: title + key message 1 ประโยค + bullet ไม่เกิน 3 ข้อ
+- ถ้ามีตัวเลขหรือข้อมูลที่น่าสนใจ ให้เก็บไว้ — นั่นคือสิ่งที่ทำให้สไลด์น่าเชื่อถือ
+- ภาษาไทย
+</code></pre>
+<hr />
+<h3 id="3">กรณีที่ 3 — ต้องหาข้อมูลจากอินเทอร์เน็ตก่อน<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>ตัวอย่าง:</strong> คุณรู้ว่าอยากโน้มน้าว SOLA ด้วยตัวเลขและหลักฐาน แต่ยังไม่มีข้อมูลในมือ — ต้องหาก่อน</p>
+<p>ใช้ <strong>ChatGPT (เปิด Browse)</strong> หรือ <strong><a href="https://www.perplexity.ai">Perplexity AI</a></strong> ซึ่งค้นอินเทอร์เน็ตได้และอ้างอิง source ให้</p>
+<h2 id="step-1-ai-evidence">🚀 Step 1 — ให้ AI ค้นข้อมูลและรวบรวม evidence<a class="headerlink" href="#step-1-ai-evidence" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">ฉันกำลังทำ presentation โน้มน้าวทีมบริหาร SOLA มหาวิทยาลัย KMUTT ให้อนุมัติโปรแกรม AI competency สำหรับอาจารย์และบุคลากร
+
+ช่วยค้นหาและรวบรวมข้อมูลต่อไปนี้:
+
+1. มหาวิทยาลัยชั้นนำในเอเชียหรือระดับโลกที่มีโปรแกรม AI upskilling สำหรับอาจารย์โดยเฉพาะ — มีตัวอย่างอะไรบ้าง และทำอะไร?
+2. มี framework หรือ guideline ระดับนานาชาติเกี่ยวกับ AI competency สำหรับอาจารย์ที่อ้างอิงได้ (เช่น UNESCO, EU, ISTE)?
+3. มีสถิติเกี่ยวกับ employer demand for AI skills ในตลาดแรงงาน Southeast Asia หรือไทย?
+4. ถ้ามีมหาวิทยาลัยไทยที่เริ่มทำเรื่องนี้แล้ว มีตัวอย่างไหมบ้าง?
+
+สำหรับแต่ละข้อ ระบุ source และปีของข้อมูลด้วย
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างผลลัพธ์จาก Perplexity</summary>
+<p><strong>1. มหาวิทยาลัยที่มีโปรแกรม AI สำหรับอาจารย์</strong>
+- NUS (สิงคโปร์): มีโปรแกรม AI Literacy for Educators ตั้งแต่ปี 2023 บังคับสำหรับอาจารย์ใหม่ทุกคน <em>(source: NUS Centre for Future-Ready Graduates, 2023)</em>
+- KAIST (เกาหลีใต้): เปิด AI Faculty Development Program ให้อาจารย์ทุกสาขา ไม่ใช่แค่ CS <em>(source: KAIST AI Graduate School, 2024)</em>
+- Tsinghua (จีน): integrate AI tools เข้า faculty training ทุกภาควิชา <em>(source: Tsinghua AI Education Report, 2023)</em></p>
+<p><strong>2. Framework ระดับนานาชาติ</strong>
+- UNESCO AI Competency Framework for Teachers (2024): แบ่งเป็น 3 ระดับ — Acquire, Deepen, Create — ครอบคลุมทั้งทักษะใช้งาน การสอน และจริยธรรม
+- EU AI Literacy Framework (2023): เน้น AI understanding + critical use สำหรับบุคลากรการศึกษา</p>
+<p><strong>3. Employer demand ใน Southeast Asia</strong>
+- LinkedIn Emerging Jobs Report (2024): AI-related skills ติด top 3 ทักษะที่นายจ้างใน SEA ต้องการมากที่สุด
+- WEF Future of Jobs 2025: 60% ของงานใน ASEAN จะต้องการ AI literacy ภายในปี 2030</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">ข้อมูลจาก AI Search ต้องตรวจก่อนนำไปใช้</p>
+<ul>
+<li><strong>ตรวจ source ที่ AI อ้างถึงทุกอัน</strong> — Perplexity มักให้ link มาด้วย ให้คลิกและตรวจว่า source จริงๆ บอกแบบนั้น ตัวเลขที่ AI รายงานอาจ paraphrase ผิดเล็กน้อยได้</li>
+<li><strong>ระวัง source ที่เก่าเกินไป</strong> — ข้อมูล AI เปลี่ยนเร็ว ถ้า source เก่ากว่า 2023 ให้หาข้อมูลใหม่ทดแทน</li>
+<li><strong>ตัวเลข % และสถิติ</strong> ต้องอ่านต้นฉบับโดยตรงก่อนใส่สไลด์ — อย่าเชื่อแค่ที่ AI สรุปมา</li>
+</ul>
+</div>
+<h2 id="step-2-evidence-slide-outline">🚀 Step 2 — นำ evidence ที่ตรวจแล้วมาสร้าง slide outline<a class="headerlink" href="#step-2-evidence-slide-outline" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">นี่คือข้อมูลที่ค้นหามาและตรวจสอบแล้ว:
+
+[วาง evidence ที่ verify แล้วจาก Step 1]
+
+ช่วยนำข้อมูลเหล่านี้มาสร้าง slide outline โน้มน้าวให้ SOLA มหาวิทยาลัย KMUTT อนุมัติโปรแกรม AI competency สำหรับอาจารย์:
+- ใช้ evidence เป็นหลักฐานสนับสนุน ไม่ใช่แค่บอกว่า AI สำคัญ
+- แต่ละสไลด์: title + key message + bullet ไม่เกิน 3 ข้อ
+- เรียงเรื่อง: โลกไปถึงไหนแล้ว → มาตรฐานคืออะไร → SOLA ควรทำอะไร
+- ภาษาไทย
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ต้อง review ก่อนไปขั้นตอนต่อไป</p>
+<ul>
+<li><strong>Key message ของแต่ละสไลด์</strong> — อ่านทีละอัน ถามตัวเองว่า "ถ้าผู้บริหาร SOLA จำได้แค่ประโยคนี้ประโยคเดียว โอเคไหม?" ถ้าไม่โอเค แก้ก่อนไปต่อ</li>
+<li><strong>ลำดับการเล่าเรื่อง</strong> — AI เรียงแบบที่มันคิดว่า logical แต่คุณรู้จัก SOLA ดีกว่า บางคนในห้องอาจต้องการตัวเลขก่อน บางคนต้องการ "ทำไม SOLA" ก่อน</li>
+<li><strong>ตัวเลขทุกตัวต้องผ่านการตรวจแล้ว</strong> — ไม่ว่าจะมาจากกรณีไหน ตัวเลขผิดในสไลด์คือความน่าเชื่อถือที่เสียไปทันที</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> จาก 3 กรณีที่ลองทำ — กรณีไหนได้ outline ที่ใกล้เคียงกับสิ่งที่อยากนำเสนอมากที่สุด? อะไรที่ต้องเพิ่มเพราะ AI ไม่มีทางรู้?</p>
+</div>
+<hr />
+<h2 id="2-outline-gemini-canvas-brand-control">👩🏻‍💼 แบบฝึกหัดที่ 2: ป้อน outline เข้า Gemini Canvas พร้อม brand control<a class="headerlink" href="#2-outline-gemini-canvas-brand-control" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณมี outline ที่อนุมัติแล้วจากแบบฝึกหัดที่ 1 และอยากให้ Gemini Canvas สร้างสไลด์ที่ใกล้เคียง brand ของ KMUTT หรือองค์กรของคุณ</p>
+<h3 id="canvas">วิธีเปิด Canvas<a class="headerlink" href="#canvas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>เข้า <a href="https://gemini.google.com">gemini.google.com</a></li>
+<li>พิมพ์ prompt ด้านล่างใน chat — Gemini จะเปิด Canvas panel ด้านขวาขึ้นมาเอง</li>
+<li>หลัง generate เสร็จ กด <strong>"Export to Google Slides"</strong></li>
+</ol>
+<h2 id="prompt-brand-spec">🚀 ลองทำ — prompt สร้างสไลด์พร้อม brand spec<a class="headerlink" href="#prompt-brand-spec" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">ช่วยสร้าง presentation ใน Canvas จาก outline ด้านล่าง
+
+กฎการออกแบบ:
+- สีหลัก (headers, accents): #1B3A6B
+- สีรอง (highlights): #F5A623
+- สีพื้นหลัง: #FFFFFF
+- Font style: clean sans-serif, headers ตัวหนา
+- Layout: แต่ละสไลด์ต้องมี title ชัดเจน + เนื้อหาไม่เกิน 3 bullet + เว้นพื้นที่ด้านขวาสำหรับรูปหรือ icon
+- Tone: ทางการแต่ไม่แข็งกระด้าง เหมาะกับการนำเสนอในมหาวิทยาลัย
+
+ห้ามใส่ bullet มากกว่า 3 ข้อต่อสไลด์
+ห้ามใส่ข้อความยาวเกิน 1 บรรทัดต่อ bullet
+ภาษาไทย
+
+--- Outline ---
+[วาง outline จากแบบฝึกหัดที่ 1 ที่ตรวจแล้ว]
+</code></pre>
+<details class="note">
+<summary>สิ่งที่ Gemini Canvas จะสร้างให้</summary>
+<p>Gemini Canvas จะเปิด panel ด้านขวาและสร้างสไลด์ทีละ slide โดยทั่วไปจะได้:</p>
+<ul>
+<li><strong>Slide 1 (Title slide):</strong> "ข้อเสนอโปรแกรม AI Competency สำหรับอาจารย์ SOLA" + subtitle + ชื่อผู้นำเสนอ</li>
+<li><strong>Slides 2–6:</strong> แต่ละ slide มี title, bullet 1–3 ข้อ, พื้นที่ visual ด้านขวา สีฟ้าเข้มที่ header และ gold accent ที่ subheadings</li>
+<li>ทั้งหมดใช้ layout เดียวกัน อ่านง่าย ดูเป็นมืออาชีพ</li>
+</ul>
+<p>หลัง export เป็น Google Slides คุณสามารถเพิ่มรูป, logo, และปรับรายละเอียดได้ทันที</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">ข้อจำกัดที่ต้องรู้</p>
+<ul>
+<li><strong>Logo KMUTT หรือหน่วยงาน:</strong> Gemini Canvas ไม่สามารถใส่ logo ให้ได้ — ต้องเพิ่มเองใน Google Slides หลัง export</li>
+<li><strong>Font ที่แน่นอน:</strong> ถ้าองค์กรใช้ font เฉพาะ (เช่น Sarabun, Kanit) Gemini อาจไม่ได้ใช้ font นั้น — ต้องเปลี่ยนใน Google Slides</li>
+<li><strong>สีอาจไม่ตรง 100%:</strong> Gemini พยายาม match hex code แต่อาจเพี้ยนเล็กน้อย — ตรวจหลัง export</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> คุณรู้ hex color code หลักขององค์กรไหม? ถ้าไม่รู้ ให้ถาม Marketing หรือ design team เก็บเอาไว้ใช้ทุกครั้งที่ทำสไลด์</p>
+</div>
+<hr />
+<h2 id="3-google-slides-template-brand-100">👩🏻‍💼 แบบฝึกหัดที่ 3: ใช้ Google Slides Template คุม brand ได้ 100%<a class="headerlink" href="#3-google-slides-template-brand-100" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> KMUTT หรือ SOLA มี brand template อยู่แล้ว และต้องการให้สไลด์ตรงตาม brand ทุก pixel — font ถูก, logo อยู่ครบ, สีตรงเป๊ะ</p>
+<p>วิธีนี้แก้ข้อจำกัดทั้งหมดของ Gemini Canvas:</p>
+<h3 id="_3">ขั้นตอน<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Export สไลด์จาก Gemini Canvas</strong> → เป็น Google Slides</li>
+<li><strong>เปิด Google Slides</strong> → ไปที่ <strong>Slide</strong> → <strong>Change theme</strong></li>
+<li><strong>Import company template</strong> ของคุณ (ไฟล์ .pptx หรือ Google Slides template จาก Google Drive)</li>
+<li>Google Slides จะ <strong>apply design ใหม่ทับ</strong> — เนื้อหาอยู่ครบ, design เป็น brand ขององค์กรทันที</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">ถ้า template ของมหาวิทยาลัยอยู่ใน Google Drive แล้ว</p>
+<p>ไปที่ <strong>File → Import slides</strong> → เลือก template → เลือก <strong>"Use destination theme"</strong> เพื่อใช้ brand template ของ KMUTT/SOLA ทับ design ที่ Gemini สร้าง</p>
+</div>
+<h2 id="bonus-ai-speaker-notes">🚀 Bonus: ให้ AI เขียน speaker notes หลังสร้างสไลด์เสร็จ<a class="headerlink" href="#bonus-ai-speaker-notes" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">นี่คือ outline สไลด์ที่ฉันสร้างสำหรับนำเสนอต่อคณะผู้บริหาร SOLA เรื่องโปรแกรม AI competency:
+
+[วาง outline]
+
+ช่วยเขียน speaker notes สำหรับแต่ละสไลด์:
+- แต่ละ notes ยาวไม่เกิน 3–4 ประโยค
+- เป็นสิ่งที่ผู้นำเสนอจะพูด ไม่ใช่อ่านจาก slide
+- รวม transition phrase สำหรับ &quot;เชื่อม&quot; ไปสไลด์ถัดไปด้วย
+- ภาษาไทย เป็นธรรมชาติ พูดได้สบาย
+</code></pre>
+<details class="note">
+<summary>ตัวอย่าง speaker notes ที่ได้</summary>
+<p><strong>Slide 1 — KMUTT และ AI: เราอยู่ตรงไหน?</strong></p>
+<p>"ก่อนเริ่ม อยากถามทุกคนสั้นๆ ว่า — ภาคเรียนที่แล้ว มีนักศึกษาถามอาจารย์ท่านใดสักคนว่า 'ใช้ AI ในการเรียนได้ไหม?' บ้างไหมครับ? (หยุด) คำถามนั้นเกิดขึ้นบ่อยมาก แต่เรายังไม่มีคำตอบกลางของมหาวิทยาลัยให้ นั่นคือจุดเริ่มต้นของเรื่องที่จะคุยวันนี้"</p>
+<p><em>(transition)</em> "มาดูก่อนว่า AI competency ที่พูดถึงนี้คืออะไร และทำไมถึงไม่ใช่แค่การสอนให้ใช้ ChatGPT"</p>
+<p><strong>Slide 3 — ทำไม SOLA ต้องนำ ไม่ใช่รอ</strong></p>
+<p>"NUS เริ่มเรื่องนี้ปี 2023 KAIST เริ่มก่อนหน้านั้น ทั้งสองไม่ได้รอให้ทุกอาจารย์พร้อม แต่เริ่มจาก early adopter กลุ่มเล็กๆ แล้วขยายออก SOLA อยู่ในตำแหน่งที่ดีที่สุดใน KMUTT ที่จะทำแบบเดียวกันนั้น"</p>
+<p><em>(transition)</em> "แล้วสิ่งที่เสนอวันนี้ขอ commit อะไรจาก SOLA บ้าง?"</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ต้อง review ก่อนนำเสนอจริง</p>
+<ul>
+<li><strong>Speaker notes ต้องอ่านออกเสียงดูก่อน</strong> — ภาษาที่ดูดีบนกระดาษบางทีฟังดูผิดธรรมชาติ ปรับให้ตรงกับสไตล์การพูดของคุณ</li>
+<li><strong>Transition phrase</strong> — AI มักเขียน transition แบบ generic ให้แก้ให้เชื่อมกับเนื้อหาจริงๆ</li>
+<li><strong>ตรวจ layout หลัง apply template</strong> — text box ของ template อาจไม่ตรงกับ text ที่ Gemini Canvas สร้าง บางอันต้องปรับด้วยมือ</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> speaker notes ของ slide แรก — คุณจะพูดแบบนี้จริงๆ ไหม? ถ้าไม่ ต้องเปลี่ยนอะไร?</p>
+</div>
+<hr />
+<h2 id="pipeline-presentation">สรุป: Pipeline ที่ใช้ได้กับทุก presentation<a class="headerlink" href="#pipeline-presentation" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">3 ขั้นตอนที่ถูกลำดับ</p>
+<ol>
+<li><strong>กลั่นเนื้อหาก่อน</strong> (ChatGPT / Claude / Perplexity) — ได้ outline ที่เล่าเรื่องได้ชัด มี key message ทุก slide</li>
+<li><strong>สร้างสไลด์</strong> (Gemini Canvas) — ป้อน outline + brand spec → export เป็น Google Slides</li>
+<li><strong>ปรับ brand และ speaker notes</strong> (Google Slides + ChatGPT/Claude) — apply template, เพิ่ม logo, เขียน notes</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">ข้อผิดพลาดที่เกิดบ่อยที่สุด</p>
+<ul>
+<li><strong>เปิด Gemini Canvas ก่อนคิดเนื้อหา</strong> — ผลคือสไลด์ที่หน้าตาดีแต่ไม่รู้จะพูดอะไร หรือ AI เติมเนื้อหาสมมติแทน</li>
+<li><strong>วางเอกสารดิบยาวๆ เข้า Canvas โดยตรง</strong> — AI จะเลือกเนื้อหาเอง ซึ่งมักไม่ตรงกับสิ่งที่คุณอยากเน้น ให้กลั่นผ่าน ChatGPT/Claude ก่อนเสมอ</li>
+<li><strong>ใส่ตัวเลขจาก AI โดยไม่ตรวจ</strong> — ทั้ง ChatGPT, Claude, Perplexity, และ Gemini อาจ interpolate ตัวเลขที่ไม่มีในข้อมูลต้นทาง ตัวเลขผิดในสไลด์ที่นำเสนอต่อผู้บริหารคือความน่าเชื่อถือที่เสียไปไม่คืน</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1332 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-manager-toolkit/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>AI Toolkit สำหรับผู้จัดการ - Gen AI for Modern Workforce - Prompt Lib</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-toolkit" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-header__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gen AI for Modern Workforce - Prompt Lib
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AI Toolkit สำหรับผู้จัดการ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-nav__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Gen AI for Modern Workforce - Prompt Lib
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../talk-to-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talk to AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fun-prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fun Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gen AI Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Gen AI Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personalized Learning (Startup Founder)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personalized Learning (Factory Manager)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-english-communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    English Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-creativity-boost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creativity Boost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-writing-task-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gen AI for Every Day Tasks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Gen AI for Every Day Tasks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edt-meeting-toolkit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meeting Toolkit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edt-presentation-toolkit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Presentation Toolkit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-data-analytics-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI-Enabled Creations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            AI-Enabled Creations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-cards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-infographics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Infographics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-website/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-web-application/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web application
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-talking-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talking Agent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-interior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interior Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Other Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Other Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../at-deep-research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deep Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../canva-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canva AI Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamma-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamma.app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../suno-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../luma-ai-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luma AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generative-ai-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative AI Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 1: สรุปประชุม
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-slide" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 2: ทำ Slide รายงานนาย
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 3: วิเคราะห์ข้อมูล หา Insight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 4: เขียน LINE ยากๆ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 5: สร้างเนื้อหาสำหรับทีม
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ลองทำ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุป: Pattern ที่ใช้ได้กับงานทุกประเภท
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ai-toolkit">AI Toolkit สำหรับผู้จัดการ<a class="headerlink" href="#ai-toolkit" title="Permanent link">&para;</a></h1>
+<p>แบบฝึกหัดนี้จะพาคุณผ่านงาน 5 ประเภทที่ผู้จัดการทำเป็นประจำ — แล้วลองใช้ AI ทำงานนั้นจริงๆ</p>
+<p><strong>วิธีใช้:</strong> แต่ละข้อมีสถานการณ์จำลอง + prompt template สำเร็จรูป คุณแค่เติมข้อมูลของตัวเองลงไปแล้ว run ดู ไม่ต้องคิด prompt ขึ้นมาใหม่ตั้งแต่ต้น</p>
+<p>ใช้ได้กับ: <a href="https://chat.openai.com">ChatGPT</a> หรือ <a href="https://claude.ai">Claude</a></p>
+<hr />
+<h2 id="1">👩🏻‍💼 แบบฝึกหัดที่ 1: สรุปประชุม<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณเพิ่งเสร็จจากประชุมทีม 1 ชั่วโมง มี notes ที่จดไว้แบบบ้านๆ ระหว่างประชุม ต้องส่ง Meeting Minutes ให้ทีมภายในวันนี้</p>
+<h2 id="_1">🚀 ลองทำ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>คัดลอก prompt ด้านล่าง แล้วแทนที่ <code>[วาง notes ของคุณที่นี่]</code> ด้วย notes จริงๆ จากประชุมครั้งล่าสุด (หรือ notes สมมติก็ได้)</p>
+<pre><code class="language-prompt">นี่คือ notes จากการประชุมที่เพิ่งเสร็จ:
+
+[วาง notes ของคุณที่นี่]
+
+ช่วยทำ Meeting Minutes ให้หน่อย โดยรวม:
+- สรุปประเด็นหลักที่คุยกัน (ไม่เกิน 5 ข้อ)
+- ตาราง action items: ใครต้องทำอะไร ภายในเมื่อไหร่
+- Tone: เป็นทางการ กระชับ ภาษาไทย
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างผลลัพธ์ที่ได้</summary>
+<p><strong>Meeting Minutes — ประชุมทบทวนแผนไตรมาส 2</strong>
+วันที่: 14 เมษายน 2568 | เวลา: 10.00–11.00 น. | ห้องประชุม A</p>
+<p><strong>ประเด็นหลักที่คุยกัน</strong></p>
+<ol>
+<li>ยอดขายไตรมาส 1 ต่ำกว่าเป้า 12% — สาเหตุหลักมาจากสินค้าคงคลังขาดช่วงกลางเดือนมีนาคม</li>
+<li>ทีม Marketing จะเปิดตัวแคมเปญใหม่สัปดาห์หน้า — งบประมาณอยู่ที่ 200,000 บาท</li>
+<li>ตัดสินใจเพิ่มความถี่การรายงาน stock เป็นทุกวันจันทร์และพฤหัส</li>
+<li>จะทบทวน KPI ของทีม Sales ในการประชุมเดือนหน้า</li>
+</ol>
+<p><strong>Action Items</strong></p>
+<table>
+<thead>
+<tr>
+<th>ผู้รับผิดชอบ</th>
+<th>งาน</th>
+<th>Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>คุณสมชาย</td>
+<td>ส่งรายงาน stock ทุกวันจันทร์และพฤหัส</td>
+<td>เริ่มสัปดาห์หน้า</td>
+</tr>
+<tr>
+<td>คุณมาลี</td>
+<td>จัดเตรียม brief แคมเปญให้ทีมภายใน 3 วัน</td>
+<td>17 เมษายน</td>
+</tr>
+<tr>
+<td>ผู้จัดการ</td>
+<td>ทบทวน KPI เกณฑ์ใหม่และส่งให้ทีม Sales</td>
+<td>30 เมษายน</td>
+</tr>
+</tbody>
+</table>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ต้อง review ก่อนส่งจริง</p>
+<ul>
+<li><strong>ชื่อ-นามสกุล ถูกต้องไหม?</strong> AI ใส่ชื่อตามที่คุณให้มา ถ้า notes คุณใช้แค่ชื่อเล่น ต้องแก้ให้ครบ</li>
+<li><strong>Deadline สอดคล้องกับที่ตกลงจริงไหม?</strong> AI ตีความจาก notes ซึ่งอาจผิดได้</li>
+<li><strong>มี action item ที่ตกหล่นไหม?</strong> ลองเทียบกับ notes ตัวเอง</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> action items ที่ AI สรุปมา — ครบถ้วนไหม? มีอะไรที่คุณรู้จาก context ในห้องที่ AI ไม่รู้บ้าง?</p>
+</div>
+<hr />
+<h2 id="2-slide">👩🏻‍💼 แบบฝึกหัดที่ 2: ทำ Slide รายงานนาย<a class="headerlink" href="#2-slide" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> วันศุกร์นี้ต้องรายงานผลงานทีมให้นาย คุณมีข้อมูลอยู่ในหัวและใน notes แต่ยังไม่รู้จะจัดเรียง slide ยังไงให้ดูดีและน่าเชื่อถือ</p>
+<h2 id="_2">🚀 ลองทำ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>เติมข้อมูลผลงานทีมของคุณลงใน <code>[...]</code> แล้ว run</p>
+<pre><code class="language-prompt">นี่คือข้อมูลผลงานทีมของฉันประจำสัปดาห์/เดือนนี้:
+
+[วางข้อมูลหรือ bullet ความคิดของคุณที่นี่ เช่น ยอดขาย, โปรเจกต์ที่เสร็จ, ปัญหาที่เจอ, สิ่งที่กำลังทำ]
+
+ช่วย outline slide presentation สำหรับรายงานนายให้หน่อย:
+- แต่ละ slide มี title อะไร
+- key message ของแต่ละ slide คืออะไร
+- ควรเน้นอะไรก่อน
+รวมทั้งหมดไม่เกิน 5–7 slide ภาษาไทย
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างผลลัพธ์ที่ได้</summary>
+<p><strong>Slide Outline: รายงานผลงานทีม Operations — เมษายน 2568</strong></p>
+<p><strong>Slide 1 — ภาพรวม</strong>
+Key message: เดือนนี้ทีมทำได้ตามเป้าในด้านคุณภาพ แต่มีจุดที่ต้องเร่งปรับในด้านความเร็ว</p>
+<p><strong>Slide 2 — ผลงานเทียบเป้า</strong>
+Key message: KPI 3 จาก 5 ตัวผ่านเกณฑ์ — ยกเว้น lead time และ error rate ที่ยังสูงกว่าค่าเฉลี่ย</p>
+<p><strong>Slide 3 — สาเหตุและสิ่งที่ทำไปแล้ว</strong>
+Key message: ปัญหา lead time มาจากขั้นตอนอนุมัติที่ใช้เวลา 3 วัน — ทีมเสนอให้ลดขั้นตอนและทดลองแล้วในกลุ่มเล็ก</p>
+<p><strong>Slide 4 — แผนเดือนหน้า</strong>
+Key message: 2 initiative หลัก — ขยาย pilot ลดขั้นตอนอนุมัติ + ฝึกทีมเรื่อง checklist ใหม่</p>
+<p><strong>Slide 5 — สิ่งที่ต้องการจากผู้บริหาร</strong>
+Key message: ขออนุมัติงบ training 15,000 บาท และสิทธิ์ทดลอง process ใหม่ใน Q2</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ต้อง review ก่อนใช้จริง</p>
+<ul>
+<li><strong>Narrative ที่ AI เสนอ ตรงกับที่คุณอยากสื่อไหม?</strong> AI เดาจากข้อมูลที่ให้ไป อาจจะเน้นผิดจุด</li>
+<li><strong>Slide สุดท้าย (ขอความช่วยเหลือ) — จำเป็นต้องใส่ไหม?</strong> ขึ้นอยู่กับบริบทการประชุม</li>
+<li><strong>ลำดับการเล่าเรื่องสมเหตุสมผลไหม?</strong> คุณรู้จักนายดีที่สุด — AI ไม่รู้ว่านายชอบเห็นตัวเลขก่อนหรือบริบทก่อน</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> narrative ที่ AI เสนอมาต่างจากที่คุณวางแผนไว้ยังไง? อะไรที่ดีกว่า อะไรที่ต้องแก้?</p>
+</div>
+<hr />
+<h2 id="3-insight">👩🏻‍💼 แบบฝึกหัดที่ 3: วิเคราะห์ข้อมูล หา Insight<a class="headerlink" href="#3-insight" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณมีตาราง KPI หรือข้อมูล performance ของทีม ต้องหาว่ามี trend หรือ anomaly อะไรที่ควร flag ให้นายรู้ก่อนการประชุมสัปดาห์หน้า</p>
+<h2 id="_3">🚀 ลองทำ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>วางข้อมูลจริงหรือสร้างตัวอย่างสมมติขึ้นมาก็ได้</p>
+<pre><code class="language-prompt">นี่คือข้อมูล KPI ประจำเดือนนี้:
+[วางตารางหรือข้อมูลของคุณที่นี่]
+
+เทียบกับเดือนที่แล้ว:
+[วางตารางเดือนที่แล้ว หรืออธิบายว่าเปลี่ยนไปยังไง]
+
+มี trend หรือ anomaly อะไรที่น่าสนใจบ้าง?
+อะไรที่ควร flag ให้นาย?
+ตอบเป็น bullet ไม่เกิน 5 ข้อ ภาษาไทย
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างผลลัพธ์ที่ได้</summary>
+<p>จากข้อมูลที่ให้มา มีสิ่งที่น่าสนใจดังนี้:</p>
+<ol>
+<li><strong>ยอดผลิตเดือนนี้ลดลง 8% จากเดือนก่อน</strong> — ขณะที่ demand ยังคงเท่าเดิม อาจมีปัญหาในสายการผลิต</li>
+<li><strong>Error rate เพิ่มขึ้น 3% ในสัปดาห์ที่ 3</strong> — ตรงกับช่วงที่พนักงานหมุนเวียน shift ใหม่ น่าตรวจสอบว่ามีความสัมพันธ์กัน</li>
+<li><strong>ตัว KPI ที่ดีขึ้นชัดเจน: on-time delivery</strong> — ปรับวิธีจัดคิวงานแล้วได้ผล ขึ้นจาก 82% เป็น 91%</li>
+<li><strong>ต้นทุนต่อหน่วยเพิ่มขึ้น 5%</strong> — น่าจะมาจาก overtime ในสัปดาห์ที่ 2 ถ้าไม่มีเหตุการณ์พิเศษ อาจต้องดู staffing plan ใหม่</li>
+<li><strong>KPI ที่ยังต่ำกว่าเป้าต่อเนื่อง 3 เดือน: defect rate</strong> — แนะนำ flag เรื่องนี้เป็นพิเศษ เพราะแนวโน้มไม่ดีขึ้น</li>
+</ol>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ต้อง review ก่อนใช้จริง</p>
+<ul>
+<li><strong>AI อาจตีความตัวเลขผิด</strong> โดยเฉพาะถ้าตารางไม่ชัดเจน ให้ตรวจสูตรและ logic ทุกข้อ</li>
+<li><strong>บริบทที่ AI ไม่รู้</strong> เช่น เดือนนั้นมีวันหยุดยาว มีการเปลี่ยน supplier หรือมีเหตุการณ์พิเศษ — คุณต้องเติมเองว่า insight ไหน valid ไหนไม่ valid</li>
+<li><strong>AI ไม่ได้ตัดสินใจให้</strong> มันแค่ scan ข้อมูลให้คุณเห็นภาพเร็วขึ้น การตัดสินใจว่าจะ flag อะไรยังเป็นงานของคุณ</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> insight ไหนที่คุณเห็นด้วย? insight ไหนที่คุณรู้ว่าผิด เพราะ AI ขาด context อะไร?</p>
+</div>
+<hr />
+<h2 id="4-line">👩🏻‍💼 แบบฝึกหัดที่ 4: เขียน LINE ยากๆ<a class="headerlink" href="#4-line" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณต้องส่งข้อความใน LINE กลุ่มทีมเพื่อแจ้งข่าวที่ไม่ดี เช่น โปรเจกต์ delay, ต้องทำงานวันหยุด, หรือ feedback ที่ sensitive — ประเภทที่นั่งคิดนานก่อนพิมพ์</p>
+<h2 id="_4">🚀 ลองทำ<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>เปลี่ยน context ใน <code>[...]</code> ให้ตรงกับสถานการณ์จริงของคุณ</p>
+<pre><code class="language-prompt">ช่วย draft ข้อความสำหรับส่งใน LINE กลุ่มทีมให้หน่อย:
+
+Context: [อธิบายสถานการณ์ที่ต้องแจ้ง เช่น &quot;ต้องแจ้งว่าโปรเจกต์จะ delay 2 สัปดาห์เพราะรอ approval จาก supplier&quot;]
+Tone: [ระบุ tone ที่ต้องการ เช่น &quot;honest แต่ maintain ความมั่นใจในทีม ไม่ blame ใคร&quot;]
+ความยาว: สั้น กระชับ ไม่เกิน 5 ประโยค ภาษาไทย
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างผลลัพธ์ที่ได้</summary>
+<p>สวัสดีครับทีม 🙏</p>
+<p>อยากแจ้งให้ทราบว่าโปรเจกต์ X จะเลื่อน delivery ออกไปประมาณ 2 สัปดาห์ เนื่องจากยังรอเอกสารอนุมัติจาก supplier ฝั่งพวกเขาเอง ซึ่งอยู่นอกเหนือการควบคุมของเรา</p>
+<p>ทีมเราทำงานได้ดีมากตลอดช่วงที่ผ่านมา และผมมั่นใจว่าเราจะส่งมอบงานที่มีคุณภาพได้ตามที่วางแผนไว้ ขอให้ทุกคนรับทราบและจะอัพเดทความคืบหน้าให้ทราบเป็นระยะครับ</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ต้อง review ก่อนส่งจริง</p>
+<ul>
+<li><strong>Tone ตรงกับสไตล์คุณไหม?</strong> ข้อความที่ AI draft มาอาจจะ formal เกินไป หรือ casual เกินไป สำหรับทีมของคุณ</li>
+<li><strong>มีข้อมูลที่ sensitive เกินไปไหม?</strong> อย่าวาง context ที่มีชื่อคนที่สาม หรือข้อมูลที่ไม่ควรเปิดเผยลงใน prompt โดยตรง</li>
+<li><strong>ข้อความยาวพอดีไหม?</strong> LINE ต่างจาก email — ถ้ายาวเกินไปคนมักไม่อ่านจบ</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> อะไรที่คุณต้องแก้ก่อนส่งจริง? เป็นเรื่อง tone, ข้อมูลที่ตกหล่น, หรือความยาว?</p>
+</div>
+<hr />
+<h2 id="5">👩🏻‍💼 แบบฝึกหัดที่ 5: สร้างเนื้อหาสำหรับทีม<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณมีลูกน้องใหม่จะมารับงาน หรือทีมต้องเริ่มทำงานใหม่ที่ไม่เคยทำ คุณต้องเตรียม checklist หรือ SOP ให้ แต่ไม่อยากนั่งเขียนทุกอย่างจากศูนย์</p>
+<h2 id="_5">🚀 ลองทำ<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>ระบุชื่องานและสิ่งที่ต้องระวัง แล้วให้ AI draft ให้ก่อน</p>
+<pre><code class="language-prompt">ช่วยเขียน checklist สำหรับลูกน้องใหม่ที่จะมาดูแลงาน:
+
+งานที่ต้องทำ: [ระบุชื่องานและอธิบาย 2–3 ประโยคว่างานนี้คืออะไร]
+สิ่งที่ต้องระวัง: [ระบุ ถ้ามี เช่น ขั้นตอนที่คนมักผิด, คนที่ต้องติดต่อ, deadlines สำคัญ]
+
+ออกมาเป็น checklist ที่เขาใช้ได้เลย ไม่เกิน 10 ข้อ ภาษาไทย
+</code></pre>
+<details class="note">
+<summary>ตัวอย่างผลลัพธ์ที่ได้</summary>
+<p><strong>Checklist: การจัดทำรายงานยอดขายประจำสัปดาห์</strong></p>
+<ul>
+<li>[ ] Download ข้อมูลยอดขายจากระบบ CRM ทุกวันจันทร์ก่อน 9.00 น.</li>
+<li>[ ] ตรวจสอบว่าข้อมูลครบทุก region (ภาคเหนือ, กลาง, ใต้, ตะวันออก)</li>
+<li>[ ] กรองเฉพาะ SKU ที่อยู่ใน promotion ปัจจุบัน (ดู list ที่ Google Drive โฟลเดอร์ "Campaign")</li>
+<li>[ ] สร้าง pivot table เปรียบเทียบยอดสัปดาห์นี้ vs สัปดาห์ก่อน และ vs เป้าเดือน</li>
+<li>[ ] ไฮไลท์สีแดงถ้า KPI ต่ำกว่าเป้ามากกว่า 10%</li>
+<li>[ ] ส่งรายงาน draft ให้หัวหน้าทีม review ก่อน 14.00 น.</li>
+<li>[ ] ส่ง final report ให้ทีมผู้บริหารทาง email ก่อน 17.00 น. วันจันทร์</li>
+</ul>
+<p><em>ถ้าข้อมูลในระบบมีปัญหา ให้แจ้ง IT support ที่ ext. 1234 ทันที อย่ารอ</em></p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ต้อง review ก่อนส่งให้ลูกน้อง</p>
+<ul>
+<li><strong>ข้อมูลที่ AI ไม่รู้</strong> เช่น ชื่อไฟล์จริง, path ใน server, ชื่อคนที่ต้องติดต่อ, เวลาที่แน่นอน — ต้องเติมเองทุกอย่าง</li>
+<li><strong>ขั้นตอนที่ตกหล่น</strong> AI draft จากสิ่งที่คุณบอก ถ้าไม่บอกก็ไม่รู้ ลองนึกว่าถ้าตัวเองทำงานนี้จะทำอะไรอีก</li>
+<li><strong>ความ specific</strong> checklist ที่ดีต้องชัดพอที่คนใหม่ทำตามได้โดยไม่ต้องถามเพิ่ม</li>
+</ul>
+<p><strong>คำถามชวนคิด:</strong> มีอะไรที่ AI ไม่รู้และคุณต้องเพิ่มเองบ้าง? เป็นข้อมูลประเภทไหน?</p>
+</div>
+<hr />
+<h2 id="pattern">สรุป: Pattern ที่ใช้ได้กับงานทุกประเภท<a class="headerlink" href="#pattern" title="Permanent link">&para;</a></h2>
+<p>หลังลองทำแบบฝึกหัดทั้ง 5 ข้อ คุณจะเริ่มเห็น pattern เดียวกัน:</p>
+<div class="admonition note">
+<p class="admonition-title">สูตรของทุก prompt ที่ได้ผล</p>
+<ol>
+<li><strong>บอก context</strong> — คุณเป็นใคร สถานการณ์คืออะไร</li>
+<li><strong>วางข้อมูลดิบ</strong> — notes, ตาราง, bullet ความคิด อะไรก็ได้ที่มี</li>
+<li><strong>ระบุ output ที่ต้องการ</strong> — format, ความยาว, tone, ภาษา</li>
+<li><strong>Review ก่อนใช้จริงเสมอ</strong> — AI draft ให้คุณ คุณตัดสินใจ</li>
+</ol>
+</div>
+<p>งานของ AI คือเปลี่ยนเวลาที่คุณใช้ "สร้างจากศูนย์" ให้เป็นเวลา "review และตัดสินใจ" — ซึ่งเร็วกว่าและเป็นงานที่ต้องการตัวคุณจริงๆ</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

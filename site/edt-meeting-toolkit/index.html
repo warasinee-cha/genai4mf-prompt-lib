@@ -1,0 +1,1400 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://warasinee-cha.github.io/genai4mf-prompt-lib/edt-meeting-toolkit/">
+      
+      
+        <link rel="prev" href="../pe-writing-task-v2/">
+      
+      
+        <link rel="next" href="../edt-presentation-toolkit/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>Meeting Toolkit - Gen AI for Modern Workforce - Prompt Lib</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#meeting-toolkit-notebooklm" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-header__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gen AI for Modern Workforce - Prompt Lib
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Meeting Toolkit
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Gen AI for Modern Workforce - Prompt Lib" class="md-nav__button md-logo" aria-label="Gen AI for Modern Workforce - Prompt Lib" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Gen AI for Modern Workforce - Prompt Lib
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../talk-to-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talk to AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fun-prompts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fun Prompts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gen AI Basics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Gen AI Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personalized Learning (Startup Founder)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-personalized-learning-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personalized Learning (Factory Manager)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-english-communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    English Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-creativity-boost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creativity Boost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-writing-task-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Gen AI for Every Day Tasks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Gen AI for Every Day Tasks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Meeting Toolkit
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Meeting Toolkit
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notebooklm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ก่อนเริ่ม: ทำความเข้าใจว่า NotebookLM ทำงานยังไง
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 1: ถอดเสียงให้แม่น — ป้องกัน hallucination ตั้งแต่ต้น
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 1 — บอก context ก่อนเริ่ม
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-transcript-hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 2 — ขอ transcript แบบที่ป้องกัน hallucination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-ai-transcript" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 3 — ขอให้ AI แก้ไข transcript ให้อ่านได้
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 2: สรุปประชุมตาม format ขององค์กรคุณ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-template-fill-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 วิธีที่ 1 — ให้ template แล้วให้ fill in
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 2: จัดการหลายประชุมในโปรเจกต์เดียว
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ถามแบบข้ามหลายการประชุม
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebooklm-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุป: NotebookLM เป็น "memory" ของโปรเจกต์คุณ
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edt-presentation-toolkit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Presentation Toolkit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pe-data-analytics-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Analytics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI-Enabled Creations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            AI-Enabled Creations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-cards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-infographics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Infographics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-website/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Website
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-web-application/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web application
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-talking-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talking Agent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ac-interior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interior Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Other Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Other Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../at-deep-research/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deep Research
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../canva-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canva AI Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gamma-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamma.app
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../suno-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../luma-ai-video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Luma AI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generative-ai-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative AI Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notebooklm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ก่อนเริ่ม: ทำความเข้าใจว่า NotebookLM ทำงานยังไง
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 1: ถอดเสียงให้แม่น — ป้องกัน hallucination ตั้งแต่ต้น
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 1 — บอก context ก่อนเริ่ม
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-transcript-hallucination" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 2 — ขอ transcript แบบที่ป้องกัน hallucination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-ai-transcript" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Step 3 — ขอให้ AI แก้ไข transcript ให้อ่านได้
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 2: สรุปประชุมตาม format ขององค์กรคุณ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-template-fill-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 วิธีที่ 1 — ให้ template แล้วให้ fill in
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      👩🏻‍💼 แบบฝึกหัดที่ 2: จัดการหลายประชุมในโปรเจกต์เดียว
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 ถามแบบข้ามหลายการประชุม
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notebooklm-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      สรุป: NotebookLM เป็น "memory" ของโปรเจกต์คุณ
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="meeting-toolkit-notebooklm">Meeting Toolkit ด้วย NotebookLM<a class="headerlink" href="#meeting-toolkit-notebooklm" title="Permanent link">&para;</a></h1>
+<p>ประชุมจบแล้ว แต่งานยังไม่จบ ต้องสรุป action items ส่งทีม ต้องเขียน minutes ให้นาย ต้องรายงานความคืบหน้าให้ผู้บริหาร — แต่ recording ยาว 1 ชั่วโมง และมีอีก 5 การประชุมที่ยังรอสรุปอยู่</p>
+<p><a href="https://notebooklm.google.com">NotebookLM</a> เป็นเครื่องมือฟรีจาก Google ที่ออกแบบมาเพื่อสิ่งนี้โดยเฉพาะ — อัปโหลด recording แล้วถามคำถามได้เลย เหมือนมีผู้ช่วยที่ "ฟังการประชุมทุกครั้งมาแล้ว" และจำทุกอย่างได้</p>
+<p>หน้านี้จะสอนวิธีใช้ให้ถูกต้อง ตั้งแต่การถอดเสียง ไปจนถึงการรวมหลายประชุมเป็น deliverable เดียวที่ส่งผู้บริหารได้</p>
+<p><a href="https://notebooklm.google.com/notebook/e190bbc7-fdeb-4c78-81db-331591c4d584">Link</a></p>
+<hr />
+<h2 id="notebooklm">ก่อนเริ่ม: ทำความเข้าใจว่า NotebookLM ทำงานยังไง<a class="headerlink" href="#notebooklm" title="Permanent link">&para;</a></h2>
+<p>NotebookLM <strong>ไม่ใช่ ChatGPT</strong> — มันไม่ตอบจากความรู้ทั่วไป แต่ตอบจาก "sources" ที่คุณอัปโหลดเข้าไปเท่านั้น ซึ่งหมายความว่า:</p>
+<ul>
+<li>ถ้าไม่ได้อัปโหลด recording → มันไม่รู้</li>
+<li>ถ้า recording เสียงไม่ชัด → มันอาจเติมเองจากที่น่าจะถูก (<strong>hallucinate</strong>)</li>
+<li>ถ้า prompt ไม่ดี → มันสรุปแบบ "เดา" แทนที่จะ "อ้าง"</li>
+</ul>
+<p>ทักษะสำคัญในการใช้ NotebookLM คือการ prompt ให้มันรู้ว่า "ห้ามเดา ถ้าไม่รู้ให้บอก"</p>
+<hr />
+<h2 id="1-hallucination">👩🏻‍💼 แบบฝึกหัดที่ 1: ถอดเสียงให้แม่น — ป้องกัน hallucination ตั้งแต่ต้น<a class="headerlink" href="#1-hallucination" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณอัปโหลด recording การประชุมทีมขึ้น NotebookLM และอยากได้ transcript หรือสรุปที่แม่นยำ ไม่มีการเติมแต่งจาก AI</p>
+<h3 id="_1">ขั้นตอน<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>เข้า <a href="https://notebooklm.google.com">NotebookLM</a> → สร้าง <strong>New Notebook</strong></li>
+<li>กด <strong>+ Add source</strong> → <strong>Upload</strong> → เลือกไฟล์ audio (รองรับ .mp3 .mp4 .wav .m4a) หาก recording การประชุมอยู่ในรูปแบบวิดีโอ แนะนำให้แปลงเป็น audio ก่อนเพื่อให้ขนาดไฟล์เล็กและจัดการได้ง่าย (ใช้ QuickTime Player for Mac หรือ VLC Player for Window)</li>
+<li>รอให้ process เสร็จ (ไฟล์ 1 ชั่วโมงใช้เวลาประมาณ 2–3 นาที)</li>
+<li><strong>ก่อนถามอะไร ให้บอก context ของการประชุมก่อนเสมอ</strong></li>
+</ol>
+<h2 id="step-1-context">🚀 Step 1 — บอก context ก่อนเริ่ม<a class="headerlink" href="#step-1-context" title="Permanent link">&para;</a></h2>
+<p>วาง prompt นี้เป็นคำถามแรกใน chat:</p>
+<pre><code class="language-prompt">การประชุมนี้คือ การประชุมหารือข้อราชการสำนักงานคณะกรรมการส่งเสริมการศึกษาเอกชน ผ่านสื่ออิเล็กทรอนิกส์ (Zoom Cloud Meeting) ครั้งที่ 1/2566 วันที่ 12 พ.ค. 2566 เวลา 09.30 - 12.00 น. สํานักงานคณะกรรมการส่งเสริมการศึกษาเอกชน OPEC
+
+
+โปรดรับทราบข้อมูลนี้ก่อนตอบคำถามต่อไป
+</code></pre>
+<h2 id="step-2-transcript-hallucination">🚀 Step 2 — ขอ transcript แบบที่ป้องกัน hallucination<a class="headerlink" href="#step-2-transcript-hallucination" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">ช่วยถอดเสียงการประชุมนี้ให้ครบถ้วนที่สุด โดยมีกฎดังนี้:
+
+1. ใช้คำพูดจากการประชุมโดยตรง อย่าสรุปหรือตีความแทน
+2. ถ้าได้ยินไม่ชัด ให้เขียน [ไม่ชัดเจน] แทน อย่าเดา
+3. ถ้าไม่แน่ใจว่าใครพูด ให้เขียน [ไม่ระบุผู้พูด] แทนการ assign ชื่อ
+4. ถ้ามีคำศัพท์เฉพาะทางที่ไม่แน่ใจ ให้ถอดตามเสียงและใส่ [?] ต่อท้าย
+
+ตอบภาษาไทย เรียงตามลำดับเวลา
+</code></pre>
+<h3 id="_2">ตัวอย่างผลลัพธ์<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/notebooklm-meeting.png" alt="NotebookLM Meeting Transcript" />
+</div>
+
+<h2 id="step-3-ai-transcript">🚀 Step 3 — ขอให้ AI แก้ไข transcript ให้อ่านได้<a class="headerlink" href="#step-3-ai-transcript" title="Permanent link">&para;</a></h2>
+<p>บางครั้ง transcript ที่ได้จาก Step 2 จะมีปัญหา <strong>คำแต่ละคำถูกเว้นวรรคแยกออกจากกัน</strong> เช่น:</p>
+<blockquote>
+<p><code>ของ สช. เอง ค่ะ ท่าน ผู้ บริหาร ของ เรา นะ คะ รวม ไป ถึง...</code></p>
+</blockquote>
+<p>แทนที่จะเป็น:</p>
+<blockquote>
+<p><code>ของ สช. เองค่ะ ท่านผู้บริหารของเรานะคะ รวมไปถึง...</code></p>
+</blockquote>
+<p>ใช้ prompt นี้ให้ AI ทำความสะอาด transcript ก่อนนำไปใช้งานต่อ:</p>
+<pre><code class="language-prompt">transcript ด้านบนมีปัญหา — คำแต่ละคำถูกเว้นวรรคแยกออกจากกันจนอ่านลำบาก
+
+ช่วยแก้ไขโดยมีกฎดังนี้:
+1. รวมคำในประโยคเดียวกันให้ติดกันตามธรรมชาติของภาษาไทย เช่น &quot;ท่าน ผู้ บริหาร&quot; → &quot;ท่านผู้บริหาร&quot;
+2. ตัดคำที่ไม่มีความหมาย เช่น เอ่อ อ่า ออกจาก transcript ห้ามตัดคำที่อาจจะสื่อความหมายออก
+2. คงโครงสร้างประโยคและลำดับเวลาเดิมไว้ทุกอย่าง — ห้ามตัด เพิ่ม หรือสรุปเนื้อหา
+3. คง tag เดิมไว้ทุกตัว เช่น [ไม่ระบุผู้พูด] [ไม่ชัดเจน] [?]
+4. แบ่งย่อหน้าตามผู้พูดหรือหัวข้อที่เปลี่ยน เพื่อให้อ่านง่ายขึ้น
+
+ผลลัพธ์คือ transcript ฉบับเดิมทุกอย่าง แต่อ่านออกได้ตามปกติ
+</code></pre>
+<p>แนะนำให้กด "Save to Note" เพื่อจะได้มี transcript ไว้เอาไปใช้ต่อ </p>
+<h3 id="_3">ตัวอย่างผลลัพธ์<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/notebooklm-meeting-2.png" alt="NotebookLM Meeting Transcript" />
+</div>
+
+<hr />
+<h2 id="2-format">👩🏻‍💼 แบบฝึกหัดที่ 2: สรุปประชุมตาม format ขององค์กรคุณ<a class="headerlink" href="#2-format" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> แต่ละองค์กรมี format การเขียน meeting minutes ต่างกัน — บางที่ต้องการแบบทางการมาก บางที่เน้น action items สั้นๆ บางที่ต้องมีลายมือชื่อผู้อนุมัติ NotebookLM สามารถสรุปตาม template ที่คุณกำหนดได้</p>
+<h2 id="1-template-fill-in">🚀 วิธีที่ 1 — ให้ template แล้วให้ fill in<a class="headerlink" href="#1-template-fill-in" title="Permanent link">&para;</a></h2>
+<p>คัดลอก format ด้านล่าง แก้ให้ตรงกับ format ขององค์กรคุณ แล้วส่งให้ NotebookLM:</p>
+<pre><code class="language-prompt">ช่วยสรุปการประชุมตาม format นี้:
+
+---
+**รายงานการประชุม**
+วันที่: [ใส่วันที่จากการประชุม]
+สถานที่/ช่องทาง: [ใส่จากการประชุม]
+ผู้เข้าร่วม: [รายชื่อทุกคนที่พูดในการประชุม]
+ผู้บันทึก: [ไม่ระบุ]
+
+**ระเบียบวาระ**
+[รายการหัวข้อที่คุยกัน]
+
+**สรุปการพิจารณาและมติ**
+[สรุปแต่ละวาระ — ใช้คำพูดจากการประชุม ไม่เพิ่มความคิดเห็นเอง]
+
+**Action Items**
+| ผู้รับผิดชอบ | งาน | Deadline |
+|---|---|---|
+| | | |
+
+**เรื่องที่ยังไม่ได้ตัดสินใจ / ต้องติดตาม**
+[รายการ]
+
+**การประชุมครั้งต่อไป**
+วันที่: [ถ้าระบุในการประชุม]
+---
+
+กฎ: ห้ามเพิ่มข้อมูลนอกเหนือจากที่พูดในการประชุม ถ้าไม่มีข้อมูลในส่วนใด ให้เขียน &quot;ไม่ได้ระบุในการประชุม&quot;
+</code></pre>
+<h3 id="_4">ตัวอย่างผลลัพธ์<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/notebooklm-meeting-3.png" alt="NotebookLM Meeting Transcript" />
+</div>
+
+<hr />
+<h2 id="2">👩🏻‍💼 แบบฝึกหัดที่ 2: จัดการหลายประชุมในโปรเจกต์เดียว<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p><strong>สถานการณ์:</strong> คุณดูแลโปรเจกต์ที่ต้องประชุมทุกสัปดาห์ มี recording สะสมอยู่แล้ว 4 ครั้ง และจะมีอีกเรื่อยๆ คุณอยากให้ AI จำทุกอย่างที่คุยกันมาตลอด และสามารถถามข้ามการประชุมได้</p>
+<h3 id="notebook-project">วิธีตั้งค่า Notebook แบบ Project<a class="headerlink" href="#notebook-project" title="Permanent link">&para;</a></h3>
+<ol>
+<li>ตั้งชื่อ Notebook ให้ชัดเจน เช่น <strong>"โปรเจกต์ Digital HR System — 2568"</strong></li>
+<li>อัปโหลด recording ทีละไฟล์ โดย <strong>ตั้งชื่อ source</strong> ให้ระบุครั้งและวันที่ เช่น:<ul>
+<li><code>ประชุมครั้งที่ 1 — 2 พ.ค. — Kick-off</code></li>
+<li><code>ประชุมครั้งที่ 2 — 9 พ.ค. — Requirements</code></li>
+<li><code>ประชุมครั้งที่ 3 — 16 พ.ค. — Design Review</code></li>
+</ul>
+</li>
+<li>เมื่อมีการประชุมใหม่ → เพิ่ม source ใหม่เข้า Notebook เดิม ไม่ต้องสร้างใหม่</li>
+</ol>
+<p>ด้วยวิธีนี้ Notebook หนึ่งอันจะเป็น "ห้องเก็บความทรงจำ" ของโปรเจกต์ทั้งหมด</p>
+<h2 id="_5">🚀 ถามแบบข้ามหลายการประชุม<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<pre><code class="language-prompt">จากทุกการประชุมที่ผ่านมา ช่วยสรุป:
+
+1. เรื่องอะไรบ้างที่ตัดสินใจแล้วและ action ไปแล้ว?
+2. เรื่องอะไรบ้างที่ยังค้างอยู่ หรือถูก defer ออกไป?
+3. มี commitment อะไรที่ถูกพูดถึงซ้ำหลายครั้งแต่ยังไม่ได้รับการ assign?
+
+ระบุว่าข้อมูลแต่ละอย่างมาจากการประชุมครั้งที่เท่าไหร่ (อ้างชื่อ source)
+</code></pre>
+<h2 id="notebooklm-memory">สรุป: NotebookLM เป็น "memory" ของโปรเจกต์คุณ<a class="headerlink" href="#notebooklm-memory" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">หลักการใช้ให้ถูกต้อง</p>
+<ol>
+<li><strong>หนึ่ง Notebook = หนึ่งโปรเจกต์</strong> อย่าผสมหลายโปรเจกต์ใน Notebook เดียว</li>
+<li><strong>ตั้งชื่อ source ให้ชัด</strong> ถ้าชื่อ source คลุมเครือ การอ้างอิงจะผิด</li>
+<li><strong>บอก context ก่อน</strong> แนะนำผู้เข้าร่วมประชุมก่อนถามคำแรก</li>
+<li><strong>ใส่กฎ "ห้ามเดา"</strong> — โดยเฉพาะ prompt ที่เกี่ยวกับ action items และ deadline</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">สิ่งที่ไม่ควรทำ</p>
+<ul>
+<li><strong>อัปโหลดประชุมที่มีข้อมูล confidential สูง</strong> เช่น ข้อมูลลูกค้า, M&amp;A, หรือเรื่องบุคคล — ไฟล์ทั้งหมดอยู่บน Google server</li>
+<li><strong>เชื่อสิ่งที่ AI สรุปโดยไม่ตรวจ</strong> — AI จับได้มาก แต่ไม่ครบ โดยเฉพาะงานที่ตกลงกันแบบ "อ้อ แล้วก็..." ตอนท้ายประชุม</li>
+<li><strong>ไม่ให้ context ที่เพียงพอ</strong> — ถ้าไม่บอกว่าใครคือใคร การ attribute คำพูดจะผิดและอาจเกิดความผิดพลาด เช่น ทำให้ action items assign ผิดคน</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
