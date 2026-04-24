@@ -11,17 +11,7 @@
 
 ---
 
-## ก่อนเริ่ม: Gemini Canvas คืออะไร
-
-[Gemini Canvas](https://gemini.google.com) คือฟีเจอร์ใน Gemini ที่สร้างสไลด์ในหน้าเดียวกัน แล้ว export เป็น Google Slides ได้โดยตรง ฟรี และไม่ต้องสมัครเพิ่ม
-
-ข้อดีหลัก: สร้างเร็ว export เข้า Google Slides ได้เลย แก้ไขต่อใน Google Slides ได้ทันที
-
-ข้อจำกัด: ควบคุม brand ได้จากการ prompt เท่านั้น (ไม่สามารถ import brand file ได้) — แต่มีวิธีแก้ที่จะสอนในแบบฝึกหัดที่ 3
-
----
-
-## 👩🏻‍💼 แบบฝึกหัดที่ 1: กลั่นเนื้อหาด้วย ChatGPT หรือ Claude
+## แบบฝึกหัดที่ 1: กลั่นเนื้อหาด้วย ChatGPT หรือ Claude
 
 **สถานการณ์:** คุณเพิ่งประชุมกับทีม SOLA ที่ KMUTT และต้องทำสไลด์โน้มน้าวให้พวกเขาอนุมัติโปรแกรม AI competency สำหรับอาจารย์ คุณมีข้อมูลอยู่ 3 แบบ — เลือก กรณีที่ตรงกับตัวคุณ
 
@@ -29,9 +19,9 @@
 
 ---
 
-### กรณีที่ 1 — มีแค่ notes คร่าวๆ จากการประชุม
+## กรณีที่ 1 — มีแค่ notes คร่าวๆ จากการประชุม
 
-## 🚀 ลองทำ
+### ลองทำ
 
 ```prompt
 ฉันต้องทำ presentation เรื่อง: ข้อเสนอโปรแกรม AI Competency สำหรับอาจารย์และบุคลากร SOLA มหาวิทยาลัย KMUTT
@@ -94,37 +84,77 @@
 
 ---
 
-### กรณีที่ 2 — มีเอกสารหรือ framework ที่ยาว
+## ป้อนผลลัพธ์เข้า Gemini Canvas
 
-**ตัวอย่าง:** คุณมี UNESCO AI Competency Framework (30+ หน้า) และต้องการดึงเฉพาะส่วนที่ใช้โน้มน้าว SOLA ออกมาทำสไลด์
+[Gemini Canvas](https://gemini.google.com) คือฟีเจอร์ใน Gemini ที่สร้างสไลด์ในหน้าเดียวกัน แล้ว export เป็น Google Slides ได้โดยตรง ฟรี และไม่ต้องสมัครเพิ่ม
 
-## 🚀 ลองทำ
+ข้อดีหลัก: สร้างเร็ว export เข้า Google Slides ได้เลย แก้ไขต่อใน Google Slides ได้ทันที
 
-```prompt
-นี่คือเนื้อหาจาก UNESCO AI Competency Framework for Teachers (2024) ส่วนที่เกี่ยวข้อง:
-
-[วาง excerpt จากเอกสาร]
-
-ผู้ฟัง: คณะผู้บริหาร SOLA มหาวิทยาลัย KMUTT — ต้องตัดสินใจว่าจะลงทุนกับโปรแกรม AI competency หรือเปล่า
-เป้าหมาย: ใช้ framework นี้เป็นหลักฐานว่า AI competency สำหรับอาจารย์คือมาตรฐานโลกแล้ว ไม่ใช่ของใหม่ที่ต้องรอพิสูจน์
-จำนวนสไลด์: ไม่เกิน 3 สไลด์ (ใช้เป็นส่วนหนึ่งของ deck ที่ใหญ่กว่า)
-
-ช่วยกลั่นเนื้อหานี้เป็น slide outline โดย:
-- เลือกเฉพาะประเด็นที่ทำให้ผู้บริหารมหาวิทยาลัยรู้สึกว่า "ถ้าไม่ทำ จะล้าหลัง"
-- แต่ละสไลด์: title + key message 1 ประโยค + bullet ไม่เกิน 3 ข้อ
-- ถ้ามีตัวเลขหรือข้อมูลที่น่าสนใจ ให้เก็บไว้ — นั่นคือสิ่งที่ทำให้สไลด์น่าเชื่อถือ
-- ภาษาไทย
-```
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/gemini-canvas-example.png" alt="AI Case Study illustration" />
+</div>
 
 ---
 
-### กรณีที่ 3 — ต้องหาข้อมูลจากอินเทอร์เน็ตก่อน
+### ทำยังไงให้ presentation ที่เราทำดูเป็นแบรนด์ของบริษัท?
+
+เราสามารถบอกให้ Gemini Canvas ใช้ brand spec ของบริษัทได้แค่ใส่ prompt เพิ่มนิดหน่อย
+
+#### ตัวอย่าง brand style prompt
+
+```prompt
+Color palette: Primary Yellow #FFC72C and Orange #FA4616 as accent and highlight colors. Use Blue-Grey #7B8189 for supporting text and dividers. Please only use Solid White for backgrounds. Never use more than 5 colors in a single infographic.
+
+Typography: Bold, modern sans-serif for headlines and content. Content might be in Thai mixed with English. Use IBM Plex Sans for English, and IBM Plex Sans Thai for Thai. Never mix in additional typeface.
+```
+
+ออกมาสวยเลย
+
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/gemini-canvas-brand-change.png" alt="AI Case Study illustration" />
+</div>
+
+---
+
+
+## ใช้ Claude ก็ได้นะ เดี๋ยวนี้ทำ Powerpoint เก่งขึ้นมากๆ
+
+น้องโชว์เหนือโดยการทำให้เลย ไม่ต้องขอ (ใช้แค่พร้อมท์แรก พร้อมท์เดียว)
+
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/claude-presentation.png" alt="AI Case Study illustration" />
+</div>
+
+---
+
+## กรณีที่ 2 — มีเอกสารหรือ framework ที่ยาว
+
+**ตัวอย่าง:** คุณมี AI competency framework for teachers (50+ หน้า) อ่านแล้วไม่ค่อยเข้าใจว่าเขาเขียนอะไร แต่ต้องรีบเอาไปทำสไลด์พรีเซนต์อย่างด่วน
+
+NotebookLM เก่งเรื่องนี้ และเก่งแบบป๋าๆ ตังไม่เก็บนะ แจกฟรีไปเลยจ้าาา
+
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/notebooklm-presentation.png" alt="AI Case Study illustration" />
+</div>
+
+
+มีข้อเสียอย่างเดียวคือมัน generate เป็นภาพ การจะแก้ไขก็ค่อนข้างลำบาก (ทำได้แต่ลำบากนิดนึง) แต่บางครั้งเราไม่รู้จะเล่าเรื่องอย่างไรเลยด้วยซ้ำ ให้ notebooklm ช่วยปั่นออกมา ก็ถือว่าโอเคทีเดียว
+
+### ทำยังไงให้ presentation ที่เราทำดูเป็นแบรนด์ของบริษัท มาดูวิธีเลย
+
+<div class="ac-gallery ac-gallery-large">
+  <img src="../images/notebooklm-style-prompt.png" alt="AI Case Study illustration" />
+</div>
+
+---
+
+## กรณีที่ 3 — ต้องหาข้อมูลจากอินเทอร์เน็ตก่อน
 
 **ตัวอย่าง:** คุณรู้ว่าอยากโน้มน้าว SOLA ด้วยตัวเลขและหลักฐาน แต่ยังไม่มีข้อมูลในมือ — ต้องหาก่อน
 
 ใช้ **ChatGPT (เปิด Browse)** หรือ **[Perplexity AI](https://www.perplexity.ai)** ซึ่งค้นอินเทอร์เน็ตได้และอ้างอิง source ให้
 
-## 🚀 Step 1 — ให้ AI ค้นข้อมูลและรวบรวม evidence
+### Step 1 — ให้ AI ค้นข้อมูลและรวบรวม evidence
 
 ```prompt
 ฉันกำลังทำ presentation โน้มน้าวทีมบริหาร SOLA มหาวิทยาลัย KMUTT ให้อนุมัติโปรแกรม AI competency สำหรับอาจารย์และบุคลากร
@@ -159,7 +189,9 @@
     - **ระวัง source ที่เก่าเกินไป** — ข้อมูล AI เปลี่ยนเร็ว ถ้า source เก่ากว่า 2023 ให้หาข้อมูลใหม่ทดแทน
     - **ตัวเลข % และสถิติ** ต้องอ่านต้นฉบับโดยตรงก่อนใส่สไลด์ — อย่าเชื่อแค่ที่ AI สรุปมา
 
-## 🚀 Step 2 — นำ evidence ที่ตรวจแล้วมาสร้าง slide outline
+### Step 2 — สร้าง slide outline จาก evidence ที่ตรวจแล้ว
+
+นำข้อมูลที่ verify แล้วจาก Step 1 มาป้อนใน ChatGPT หรือ Claude:
 
 ```prompt
 นี่คือข้อมูลที่ค้นหามาและตรวจสอบแล้ว:
@@ -173,122 +205,15 @@
 - ภาษาไทย
 ```
 
-!!! warning "สิ่งที่ต้อง review ก่อนไปขั้นตอนต่อไป"
-    - **Key message ของแต่ละสไลด์** — อ่านทีละอัน ถามตัวเองว่า "ถ้าผู้บริหาร SOLA จำได้แค่ประโยคนี้ประโยคเดียว โอเคไหม?" ถ้าไม่โอเค แก้ก่อนไปต่อ
-    - **ลำดับการเล่าเรื่อง** — AI เรียงแบบที่มันคิดว่า logical แต่คุณรู้จัก SOLA ดีกว่า บางคนในห้องอาจต้องการตัวเลขก่อน บางคนต้องการ "ทำไม SOLA" ก่อน
-    - **ตัวเลขทุกตัวต้องผ่านการตรวจแล้ว** — ไม่ว่าจะมาจากกรณีไหน ตัวเลขผิดในสไลด์คือความน่าเชื่อถือที่เสียไปทันที
+### Step 3 — ป้อน outline เข้า Gemini Canvas
 
-    **คำถามชวนคิด:** จาก 3 กรณีที่ลองทำ — กรณีไหนได้ outline ที่ใกล้เคียงกับสิ่งที่อยากนำเสนอมากที่สุด? อะไรที่ต้องเพิ่มเพราะ AI ไม่มีทางรู้?
+เมื่อได้ outline ที่ตรวจแล้ว ป้อนเข้า [Gemini Canvas](https://gemini.google.com) ด้วย prompt เดียวกับตัวอย่างข้างบน
 
----
-
-## 👩🏻‍💼 แบบฝึกหัดที่ 2: ป้อน outline เข้า Gemini Canvas พร้อม brand control
-
-**สถานการณ์:** คุณมี outline ที่อนุมัติแล้วจากแบบฝึกหัดที่ 1 และอยากให้ Gemini Canvas สร้างสไลด์ที่ใกล้เคียง brand ของ KMUTT หรือองค์กรของคุณ
-
-### วิธีเปิด Canvas
-
-1. เข้า [gemini.google.com](https://gemini.google.com)
-2. พิมพ์ prompt ด้านล่างใน chat — Gemini จะเปิด Canvas panel ด้านขวาขึ้นมาเอง
-3. หลัง generate เสร็จ กด **"Export to Google Slides"**
-
-## 🚀 ลองทำ — prompt สร้างสไลด์พร้อม brand spec
-
-```prompt
-ช่วยสร้าง presentation ใน Canvas จาก outline ด้านล่าง
-
-กฎการออกแบบ:
-- สีหลัก (headers, accents): #1B3A6B
-- สีรอง (highlights): #F5A623
-- สีพื้นหลัง: #FFFFFF
-- Font style: clean sans-serif, headers ตัวหนา
-- Layout: แต่ละสไลด์ต้องมี title ชัดเจน + เนื้อหาไม่เกิน 3 bullet + เว้นพื้นที่ด้านขวาสำหรับรูปหรือ icon
-- Tone: ทางการแต่ไม่แข็งกระด้าง เหมาะกับการนำเสนอในมหาวิทยาลัย
-
-ห้ามใส่ bullet มากกว่า 3 ข้อต่อสไลด์
-ห้ามใส่ข้อความยาวเกิน 1 บรรทัดต่อ bullet
-ภาษาไทย
-
---- Outline ---
-[วาง outline จากแบบฝึกหัดที่ 1 ที่ตรวจแล้ว]
-```
-
-??? note "สิ่งที่ Gemini Canvas จะสร้างให้"
-
-    Gemini Canvas จะเปิด panel ด้านขวาและสร้างสไลด์ทีละ slide โดยทั่วไปจะได้:
-
-    - **Slide 1 (Title slide):** "ข้อเสนอโปรแกรม AI Competency สำหรับอาจารย์ SOLA" + subtitle + ชื่อผู้นำเสนอ
-    - **Slides 2–6:** แต่ละ slide มี title, bullet 1–3 ข้อ, พื้นที่ visual ด้านขวา สีฟ้าเข้มที่ header และ gold accent ที่ subheadings
-    - ทั้งหมดใช้ layout เดียวกัน อ่านง่าย ดูเป็นมืออาชีพ
-
-    หลัง export เป็น Google Slides คุณสามารถเพิ่มรูป, logo, และปรับรายละเอียดได้ทันที
-
-!!! warning "ข้อจำกัดที่ต้องรู้"
-    - **Logo KMUTT หรือหน่วยงาน:** Gemini Canvas ไม่สามารถใส่ logo ให้ได้ — ต้องเพิ่มเองใน Google Slides หลัง export
-    - **Font ที่แน่นอน:** ถ้าองค์กรใช้ font เฉพาะ (เช่น Sarabun, Kanit) Gemini อาจไม่ได้ใช้ font นั้น — ต้องเปลี่ยนใน Google Slides
-    - **สีอาจไม่ตรง 100%:** Gemini พยายาม match hex code แต่อาจเพี้ยนเล็กน้อย — ตรวจหลัง export
-
-    **คำถามชวนคิด:** คุณรู้ hex color code หลักขององค์กรไหม? ถ้าไม่รู้ ให้ถาม Marketing หรือ design team เก็บเอาไว้ใช้ทุกครั้งที่ทำสไลด์
-
----
-
-## 👩🏻‍💼 แบบฝึกหัดที่ 3: ใช้ Google Slides Template คุม brand ได้ 100%
-
-**สถานการณ์:** KMUTT หรือ SOLA มี brand template อยู่แล้ว และต้องการให้สไลด์ตรงตาม brand ทุก pixel — font ถูก, logo อยู่ครบ, สีตรงเป๊ะ
-
-วิธีนี้แก้ข้อจำกัดทั้งหมดของ Gemini Canvas:
-
-### ขั้นตอน
-
-1. **Export สไลด์จาก Gemini Canvas** → เป็น Google Slides
-2. **เปิด Google Slides** → ไปที่ **Slide** → **Change theme**
-3. **Import company template** ของคุณ (ไฟล์ .pptx หรือ Google Slides template จาก Google Drive)
-4. Google Slides จะ **apply design ใหม่ทับ** — เนื้อหาอยู่ครบ, design เป็น brand ขององค์กรทันที
-
-!!! note "ถ้า template ของมหาวิทยาลัยอยู่ใน Google Drive แล้ว"
-    ไปที่ **File → Import slides** → เลือก template → เลือก **"Use destination theme"** เพื่อใช้ brand template ของ KMUTT/SOLA ทับ design ที่ Gemini สร้าง
-
-## 🚀 Bonus: ให้ AI เขียน speaker notes หลังสร้างสไลด์เสร็จ
-
-```prompt
-นี่คือ outline สไลด์ที่ฉันสร้างสำหรับนำเสนอต่อคณะผู้บริหาร SOLA เรื่องโปรแกรม AI competency:
-
-[วาง outline]
-
-ช่วยเขียน speaker notes สำหรับแต่ละสไลด์:
-- แต่ละ notes ยาวไม่เกิน 3–4 ประโยค
-- เป็นสิ่งที่ผู้นำเสนอจะพูด ไม่ใช่อ่านจาก slide
-- รวม transition phrase สำหรับ "เชื่อม" ไปสไลด์ถัดไปด้วย
-- ภาษาไทย เป็นธรรมชาติ พูดได้สบาย
-```
-
-??? note "ตัวอย่าง speaker notes ที่ได้"
-
-    **Slide 1 — KMUTT และ AI: เราอยู่ตรงไหน?**
-
-    "ก่อนเริ่ม อยากถามทุกคนสั้นๆ ว่า — ภาคเรียนที่แล้ว มีนักศึกษาถามอาจารย์ท่านใดสักคนว่า 'ใช้ AI ในการเรียนได้ไหม?' บ้างไหมครับ? (หยุด) คำถามนั้นเกิดขึ้นบ่อยมาก แต่เรายังไม่มีคำตอบกลางของมหาวิทยาลัยให้ นั่นคือจุดเริ่มต้นของเรื่องที่จะคุยวันนี้"
-
-    *(transition)* "มาดูก่อนว่า AI competency ที่พูดถึงนี้คืออะไร และทำไมถึงไม่ใช่แค่การสอนให้ใช้ ChatGPT"
-
-    **Slide 3 — ทำไม SOLA ต้องนำ ไม่ใช่รอ**
-
-    "NUS เริ่มเรื่องนี้ปี 2023 KAIST เริ่มก่อนหน้านั้น ทั้งสองไม่ได้รอให้ทุกอาจารย์พร้อม แต่เริ่มจาก early adopter กลุ่มเล็กๆ แล้วขยายออก SOLA อยู่ในตำแหน่งที่ดีที่สุดใน KMUTT ที่จะทำแบบเดียวกันนั้น"
-
-    *(transition)* "แล้วสิ่งที่เสนอวันนี้ขอ commit อะไรจาก SOLA บ้าง?"
-
-!!! warning "สิ่งที่ต้อง review ก่อนนำเสนอจริง"
-    - **Speaker notes ต้องอ่านออกเสียงดูก่อน** — ภาษาที่ดูดีบนกระดาษบางทีฟังดูผิดธรรมชาติ ปรับให้ตรงกับสไตล์การพูดของคุณ
-    - **Transition phrase** — AI มักเขียน transition แบบ generic ให้แก้ให้เชื่อมกับเนื้อหาจริงๆ
-    - **ตรวจ layout หลัง apply template** — text box ของ template อาจไม่ตรงกับ text ที่ Gemini Canvas สร้าง บางอันต้องปรับด้วยมือ
-
-    **คำถามชวนคิด:** speaker notes ของ slide แรก — คุณจะพูดแบบนี้จริงๆ ไหม? ถ้าไม่ ต้องเปลี่ยนอะไร?
-
----
 
 ## สรุป: Pipeline ที่ใช้ได้กับทุก presentation
 
 !!! note "3 ขั้นตอนที่ถูกลำดับ"
-    1. **กลั่นเนื้อหาก่อน** (ChatGPT / Claude / Perplexity) — ได้ outline ที่เล่าเรื่องได้ชัด มี key message ทุก slide
+    1. **กลั่นเนื้อหาก่อน** (ChatGPT / Claude / Perplexity) — เริ่มด้วย source information ที่ดี พร้อมท์จนได้ outline ที่เล่าเรื่องได้ชัดถูกใจ
     2. **สร้างสไลด์** (Gemini Canvas) — ป้อน outline + brand spec → export เป็น Google Slides
     3. **ปรับ brand และ speaker notes** (Google Slides + ChatGPT/Claude) — apply template, เพิ่ม logo, เขียน notes
 

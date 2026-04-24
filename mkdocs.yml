@@ -29,6 +29,7 @@ nav:
   - Gen AI for Every Day Tasks:
       - Meeting Toolkit: edt-meeting-toolkit.md
       - Presentation Toolkit: edt-presentation-toolkit.md
+      - Presentation Showcase: edt-presentation-2.md
       - Data Analytics (New): pe-data-analytics-v2.md
       - Data Analytics (Old): pe-data-analytics.md
   - AI-Enabled Creations:
@@ -41,6 +42,7 @@ nav:
       - Interior Design: ac-interior.md
   - Other Tools:
       - Deep Research: at-deep-research.md
+      - Perplexity: at-perplexity.md
       - Canva AI Features: canva-ai.md
       - Gamma.app: gamma-app.md
       - Suno: suno-video.md
@@ -50,3 +52,6 @@ nav:
 
 extra_css:
   - stylesheets/extra.css
+
+plugins:
+  - print-site

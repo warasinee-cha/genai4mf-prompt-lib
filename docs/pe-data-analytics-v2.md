@@ -32,3 +32,23 @@ Claude รันโค้ดเอง วิเคราะห์เอง แ�
     
 !!! warning "ค่าใช้จ่าย"
     ทั้ง Claude และ Google AI Studio สามารถทำงานแบบ Data Analytics ได้ดีมาก แต่ก็ยังเป็นงานที่ค่อนข้างเปลือง tokens อาจจะต้องมีงบประมาณซัพพอร์ทหากจะทำเป็นประจำ
+
+---
+
+??? note "ภาพตัวอย่างผลลัพธ์จาก Claude (สำรอง)"
+
+    <div class="ac-gallery ac-gallery-large">
+      <img src="../images/claude-analytics-1.png" alt="Claude Analytics Example 1" />
+    </div>
+
+    <div class="ac-gallery ac-gallery-large">
+      <img src="../images/claude-analytics-2.png" alt="Claude Analytics Example 2" />
+    </div>
+
+    <div class="ac-gallery ac-gallery-large">
+      <img src="../images/claude-analytics-3.png" alt="Claude Analytics Example 3" />
+    </div>
+
+    <div class="ac-gallery ac-gallery-large">
+      <img src="../images/claude-analytics-4.png" alt="Claude Analytics Example 4" />
+    </div>
