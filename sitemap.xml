@@ -2,138 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-cards/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-infographics/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-interior/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-poster/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-talking-agent/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-video/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-web-application/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-web-presentation/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/ac-website/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/additional-tool/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/at-deep-research/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
+    </url>
+    <url>
+         <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/at-perplexity/</loc>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/canva-ai/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/edt-meeting-toolkit/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
+    </url>
+    <url>
+         <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/edt-presentation-2/</loc>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/edt-presentation-toolkit/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/fun-prompts/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/gamma-app/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/generative-ai-basics/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/luma-ai-video/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/main-tools/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/notebooklm/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-creativity-boost/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-data-analytics-v2/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-data-analytics/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-english-communication/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-manager-toolkit/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-personalized-learning-v2/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-personalized-learning/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-writing-doc/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/pe-writing-task-v2/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/prompt-engineering/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/slide/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/suno-video/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://warasinee-cha.github.io/genai4mf-prompt-lib/talk-to-ai/</loc>
-         <lastmod>2026-04-18</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
 </urlset>
