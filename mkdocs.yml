@@ -52,6 +52,3 @@ nav:
 
 extra_css:
   - stylesheets/extra.css
-
-plugins:
-  - print-site
